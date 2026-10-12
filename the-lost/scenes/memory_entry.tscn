@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://s3ppv8wp0sft"]
+
+[ext_resource type="Script" uid="uid://h3jc5xbsmphd" path="res://scripts/memory_entry.gd" id="1_memory_entry"]
+[ext_resource type="Texture2D" uid="uid://cch0yher82khm" path="res://assets/gameUI/conflict.png" id="2_conflict"]
+[ext_resource type="PackedScene" path="res://scenes/memory_move_popup.tscn" id="3_move_popup"]
+
+[node name="MemoryEntry" type="Control" unique_id=1526738873]
+custom_minimum_size = Vector2(0, 118)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 520.0
+offset_bottom = 118.0
+script = ExtResource("1_memory_entry")
+
+[node name="EntryPanel" type="Control" parent="." unique_id=1811543311]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Margin" type="MarginContainer" parent="EntryPanel" unique_id=1905371809]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="ContentRow" type="HBoxContainer" parent="EntryPanel/Margin" unique_id=1155433413]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 8
+
+[node name="ConflictIcon" type="TextureRect" parent="EntryPanel/Margin/ContentRow" unique_id=30637629]
+custom_minimum_size = Vector2(38, 38)
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("2_conflict")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="MemoryText" type="RichTextLabel" parent="EntryPanel/Margin/ContentRow" unique_id=1186659237]
+custom_minimum_size = Vector2(0, 82)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = ""
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+
+[node name="Hitbox" type="Button" parent="." unique_id=1927777068]
+self_modulate = Color(1, 1, 1, 0.004)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="MoveToPopup" parent="." unique_id=1527194419 instance=ExtResource("3_move_popup")]
+visible = false
+layout_mode = 0
+offset_left = 86.0
+offset_top = -96.0
+offset_right = 416.0
+offset_bottom = 22.0

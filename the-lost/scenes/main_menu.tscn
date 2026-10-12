@@ -1,0 +1,84 @@
+[gd_scene load_steps=7 format=3 uid="uid://dthlncqtpytja"]
+
+[ext_resource type="Script" uid="uid://dtotg7cqimx6v" path="res://scripts/main_menu.gd" id="1_main_menu"]
+[ext_resource type="Texture2D" uid="uid://2b00752isos8" path="res://assets/homepage/title.png" id="2_title"]
+[ext_resource type="Texture2D" uid="uid://ds10ot6i0fwii" path="res://assets/homepage/play-btn.png" id="3_play"]
+[ext_resource type="Texture2D" uid="uid://bwlk66fh5lud0" path="res://assets/homepage/quit-btn.png" id="4_quit"]
+[ext_resource type="Texture2D" uid="uid://sa2cs3nhj7f" path="res://assets/homepage/settings-btn.png" id="5_settings"]
+[ext_resource type="PackedScene" path="res://scenes/settings_menu.tscn" id="6_settings_menu"]
+
+[node name="MainMenu" type="Control" unique_id=147486874]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_main_menu")
+
+[node name="PaperBackground" type="ColorRect" parent="." unique_id=725492231]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.965, 0.961, 0.943, 1)
+
+[node name="TitleBackground" type="TextureRect" parent="." unique_id=691349864]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -61.0
+offset_top = -49.0
+offset_right = 92.0
+offset_bottom = 115.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_title")
+stretch_mode = 5
+
+[node name="ButtonColumn" type="VBoxContainer" parent="." unique_id=1818142419]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.57
+anchor_right = 0.5
+anchor_bottom = 0.57
+offset_left = -214.5
+offset_top = 26.880005
+offset_right = 215.5
+offset_bottom = 356.88
+theme_override_constants/separation = -12
+alignment = 1
+
+[node name="PlayButton" type="TextureButton" parent="ButtonColumn" unique_id=2114665310]
+custom_minimum_size = Vector2(371, 162)
+layout_mode = 2
+size_flags_horizontal = 4
+focus_mode = 0
+texture_normal = ExtResource("3_play")
+
+[node name="QuitButton" type="TextureButton" parent="ButtonColumn" unique_id=736073558]
+custom_minimum_size = Vector2(367, 169)
+layout_mode = 2
+size_flags_horizontal = 4
+focus_mode = 0
+texture_normal = ExtResource("4_quit")
+
+[node name="SettingsButton" type="TextureButton" parent="." unique_id=1546522434]
+layout_mode = 0
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 34.0
+offset_top = -173.0
+offset_right = 141.0
+offset_bottom = -34.0
+grow_vertical = 0
+focus_mode = 0
+texture_normal = ExtResource("5_settings")
+
+[node name="SettingsMenu" parent="." instance=ExtResource("6_settings_menu")]
+visible = false

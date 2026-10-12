@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://d4gt58ahjbnef"]
+
+[ext_resource type="Script" uid="uid://xduv8n0a32hm" path="res://scripts/end_menu.gd" id="1_end_menu"]
+[ext_resource type="Texture2D" uid="uid://b8u2agh35ry31" path="res://assets/gameUI/TheEnd-title.png" id="2_end_title"]
+[ext_resource type="Texture2D" uid="uid://db0thbmuwtiie" path="res://assets/gameUI/TheEnd-restart.png" id="3_restart"]
+[ext_resource type="Texture2D" uid="uid://qycyiiajxpxb" path="res://assets/gameUI/TheEnd-leave.png" id="4_leave"]
+
+[node name="EndMenu" type="CanvasLayer" unique_id=311759383]
+layer = 100
+script = ExtResource("1_end_menu")
+
+[node name="Root" type="Control" parent="." unique_id=737504912]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleBackground" type="TextureRect" parent="Root" unique_id=908846309]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_end_title")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="RestartButton" type="TextureButton" parent="Root" unique_id=196729314]
+custom_minimum_size = Vector2(496, 186)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.58
+anchor_right = 0.5
+anchor_bottom = 0.58000004
+offset_left = -248.0
+offset_top = -93.0
+offset_right = 248.0
+offset_bottom = 92.99994
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("3_restart")
+
+[node name="LeaveButton" type="TextureButton" parent="Root" unique_id=2020354312]
+custom_minimum_size = Vector2(459, 160)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.49800003
+anchor_top = 0.808
+anchor_right = 0.49800003
+anchor_bottom = 0.808
+offset_left = -229.88605
+offset_top = -80.12805
+offset_right = 229.11395
+offset_bottom = 79.87195
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("4_leave")

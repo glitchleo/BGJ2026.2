@@ -1,0 +1,106 @@
+[gd_scene format=3 uid="uid://bggknlp386j6t"]
+
+[ext_resource type="Script" uid="uid://bvim23n330h2y" path="res://scripts/pause_menu.gd" id="1_pause_menu"]
+[ext_resource type="Texture2D" uid="uid://co18t5vwja056" path="res://assets/gameUI/pause-menu.png" id="2_pause_art"]
+
+[node name="PauseMenu" type="Control" unique_id=275861772]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pause_menu")
+
+[node name="MenuTexture" type="TextureRect" parent="." unique_id=1359439594]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_pause_art")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ResumeButton" type="Button" parent="." unique_id=500049277]
+self_modulate = Color(1, 1, 1, 0.004)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.42900002
+anchor_top = 0.30100003
+anchor_right = 0.54300004
+anchor_bottom = 0.36800003
+offset_left = -0.20306396
+offset_top = 0.28396606
+offset_right = -0.2010498
+offset_bottom = -0.088012695
+focus_mode = 0
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="SettingsButton" type="Button" parent="." unique_id=1495177452]
+self_modulate = Color(1, 1, 1, 0.004)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.423
+anchor_top = 0.36600003
+anchor_right = 0.53000003
+anchor_bottom = 0.437
+offset_left = -0.36102295
+offset_top = -0.25601196
+offset_right = 0.289917
+offset_bottom = -0.2919922
+focus_mode = 0
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="MainMenuButton" type="Button" parent="." unique_id=684440213]
+self_modulate = Color(1, 1, 1, 0.004)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.423
+anchor_top = 0.44300002
+anchor_right = 0.54
+anchor_bottom = 0.49500003
+offset_left = 0.63897705
+offset_top = 0.2119751
+offset_right = -0.7800293
+offset_bottom = -0.42004395
+focus_mode = 0
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="LeaveButton" type="Button" parent="." unique_id=185201652]
+self_modulate = Color(1, 1, 1, 0.004)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.43800002
+anchor_top = 0.49100003
+anchor_right = 0.5
+anchor_bottom = 0.537
+offset_left = 0.53393555
+offset_top = 0.24398804
+offset_right = 0.040039063
+offset_bottom = -0.45199585
+focus_mode = 0
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="BackButton" type="Button" parent="." unique_id=603670669]
+self_modulate = Color(1, 1, 1, 0.004)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.45000002
+anchor_top = 0.569
+anchor_right = 0.504
+anchor_bottom = 0.63000005
+offset_left = 0.8499756
+offset_top = -0.20397949
+offset_right = 0.27197266
+offset_bottom = -0.080078125
+focus_mode = 0
+mouse_default_cursor_shape = 2
+flat = true

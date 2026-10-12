@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://b4qhbs2fhhxha"]
+
+[ext_resource type="Script" uid="uid://b2rmjg0rdj4y2" path="res://scripts/volume_slider.gd" id="1_volume_slider"]
+
+[node name="VolumeSlider" type="Control" unique_id=1039753280]
+custom_minimum_size = Vector2(420, 50)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 420.0
+offset_bottom = 56.0
+mouse_filter = 1
+script = ExtResource("1_volume_slider")
+
+[node name="TrackLine" type="ColorRect" parent="." unique_id=1243377043]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.02
+anchor_top = 0.42900002
+anchor_right = 0.374
+anchor_bottom = 0.60700005
+offset_left = -8.4
+offset_top = -0.024002075
+offset_right = -0.08000183
+offset_bottom = 0.0079956055
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="HandleLine" type="ColorRect" parent="." unique_id=311997640]
+custom_minimum_size = Vector2(10, 34)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 112.0
+offset_top = -17.0
+offset_right = 122.0
+offset_bottom = 17.0
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Hitbox" type="Button" parent="." unique_id=685314027]
+self_modulate = Color(1, 1, 1, 0.004)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.37600002
+anchor_bottom = 1.0
+offset_right = 1.0799866
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+mouse_default_cursor_shape = 2
+flat = true

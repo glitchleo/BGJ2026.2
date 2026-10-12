@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://obhhu6xqv8ev"]
+
+[ext_resource type="Script" path="res://scripts/memory_bookmark.gd" id="1_memory_bookmark"]
+
+[node name="MemoryBookmark" type="TextureButton" unique_id=1949064169]
+custom_minimum_size = Vector2(120, 54)
+focus_mode = 0
+mouse_default_cursor_shape = 2
+script = ExtResource("1_memory_bookmark")
+
+[node name="TabPaper" type="ColorRect" parent="." unique_id=860681725]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.77, 0.61, 0.385, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1673651251]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Section"
+horizontal_alignment = 1
+vertical_alignment = 1

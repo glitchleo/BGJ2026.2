@@ -1,0 +1,197 @@
+[gd_scene format=3 uid="uid://bdt603wqrnh34"]
+
+[ext_resource type="Script" uid="uid://cooa48hihando" path="res://scripts/dialog_window.gd" id="1_dialog_window"]
+[ext_resource type="Texture2D" uid="uid://dhahnx6hst4lo" path="res://assets/gameUI/dialog-normal.png" id="2_dialog_normal"]
+[ext_resource type="Texture2D" uid="uid://qxa8dpbyj8sm" path="res://assets/gameUI/dialog-name.png" id="3_dialog_name"]
+[ext_resource type="Theme" uid="uid://dcekm1b7j6bta" path="res://assets/fonts/MemoryBookTheme.tres" id="4_book_theme"]
+
+[node name="DialogWindow" type="Control" unique_id=298766014]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme = ExtResource("4_book_theme")
+script = ExtResource("1_dialog_window")
+
+[node name="DialogTexture" type="TextureRect" parent="." unique_id=2057748233]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.165
+anchor_top = 0.61
+anchor_right = 0.835
+anchor_bottom = 0.96
+mouse_filter = 2
+texture = ExtResource("2_dialog_normal")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="NamePlate" type="TextureRect" parent="." unique_id=142261695]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.17
+anchor_top = 0.535
+anchor_right = 0.315
+anchor_bottom = 0.655
+mouse_filter = 2
+texture = ExtResource("3_dialog_name")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="NameLabel" type="Label" parent="NamePlate" unique_id=1978643102]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 54.809998
+offset_top = 26.939941
+offset_right = -61.205017
+offset_bottom = -25.980011
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "NPC"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineText" type="Label" parent="." unique_id=311543445]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.238
+anchor_top = 0.68500006
+anchor_right = 0.551
+anchor_bottom = 0.88000005
+offset_left = -0.06600952
+offset_top = -6.1035156e-05
+offset_right = 0.34301758
+offset_bottom = -6.1035156e-05
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Dialog line"
+autowrap_mode = 3
+
+[node name="AdvanceHitbox" type="Button" parent="." unique_id=1015644414]
+self_modulate = Color(1, 1, 1, 0.004)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.165
+anchor_top = 0.61
+anchor_right = 0.835
+anchor_bottom = 0.96
+offset_left = 31.845001
+focus_mode = 0
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="OptionSlots" type="Control" parent="." unique_id=1561920342]
+layout_mode = 1
+anchor_left = 0.628
+anchor_top = 0.66400003
+anchor_right = 0.77400005
+anchor_bottom = 0.90500003
+offset_left = -0.7960205
+offset_top = -0.22406006
+offset_right = -0.618042
+offset_bottom = -6.1035156e-05
+mouse_filter = 2
+
+[node name="OptionSlot1" type="Control" parent="OptionSlots" unique_id=1569768912]
+layout_mode = 1
+anchor_right = 1.0
+anchor_bottom = 0.3
+mouse_filter = 1
+
+[node name="Label" type="Label" parent="OptionSlots/OptionSlot1" unique_id=2043736367]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 28
+text = "Option"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Hitbox" type="Button" parent="OptionSlots/OptionSlot1" unique_id=1868047862]
+self_modulate = Color(1, 1, 1, 0.004)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -6.584961
+offset_top = 1.8599854
+offset_right = -6.584961
+offset_bottom = 1.8599854
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="OptionSlot2" type="Control" parent="OptionSlots" unique_id=2030869576]
+layout_mode = 1
+anchor_top = 0.35
+anchor_right = 1.0
+anchor_bottom = 0.65
+mouse_filter = 1
+
+[node name="Label" type="Label" parent="OptionSlots/OptionSlot2" unique_id=1650344880]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 28
+text = "Option"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Hitbox" type="Button" parent="OptionSlots/OptionSlot2" unique_id=1798186364]
+self_modulate = Color(1, 1, 1, 0.004)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="OptionSlot3" type="Control" parent="OptionSlots" unique_id=2075030509]
+layout_mode = 1
+anchor_top = 0.7
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 1
+
+[node name="Label" type="Label" parent="OptionSlots/OptionSlot3" unique_id=1637555605]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 28
+text = "Option"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Hitbox" type="Button" parent="OptionSlots/OptionSlot3" unique_id=1414856867]
+self_modulate = Color(1, 1, 1, 0.004)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+mouse_default_cursor_shape = 2
+flat = true

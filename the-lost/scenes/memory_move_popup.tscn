@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://bqsc7tm6kafe"]
+
+[ext_resource type="Script" uid="uid://b7wjq3p05fssv" path="res://scripts/memory_move_popup.gd" id="1_move_popup"]
+[ext_resource type="Texture2D" uid="uid://kc4ij7lnivnm" path="res://assets/gameUI/BmoveTo.png" id="2_bubble"]
+[ext_resource type="Texture2D" uid="uid://b54b476rybmlu" path="res://assets/gameUI/BmoveTo-true.png" id="3_true"]
+[ext_resource type="Texture2D" uid="uid://brostk4auitui" path="res://assets/gameUI/BmoveTo-false.png" id="4_false"]
+[ext_resource type="Texture2D" uid="uid://dg7hbyiqhv768" path="res://assets/gameUI/BmoveTo-uncertain.png" id="5_uncertain"]
+
+[node name="MemoryMovePopup" type="Control" unique_id=1352690013]
+z_index = 30
+custom_minimum_size = Vector2(330, 118)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 330.0
+offset_bottom = 118.0
+script = ExtResource("1_move_popup")
+
+[node name="Bubble" type="TextureRect" parent="." unique_id=1270052598]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 9.0
+offset_top = -21.0
+offset_right = -8.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_bubble")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ButtonRow" type="HBoxContainer" parent="." unique_id=553074504]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.09
+anchor_top = 0.42
+anchor_right = 0.91
+anchor_bottom = 0.88
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="TrueButton" type="TextureButton" parent="ButtonRow" unique_id=1106625742]
+custom_minimum_size = Vector2(88, 42)
+layout_mode = 2
+focus_mode = 0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("3_true")
+
+[node name="FalseButton" type="TextureButton" parent="ButtonRow" unique_id=714414203]
+custom_minimum_size = Vector2(88, 42)
+layout_mode = 2
+focus_mode = 0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("4_false")
+
+[node name="UncertainButton" type="TextureButton" parent="ButtonRow" unique_id=669040192]
+custom_minimum_size = Vector2(112, 42)
+layout_mode = 2
+focus_mode = 0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("5_uncertain")

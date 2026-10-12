@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://ctev1paaol2ed"]
+
+[ext_resource type="Script" uid="uid://tlf5rkgabdan" path="res://scripts/npc.gd" id="1_npc"]
+[ext_resource type="Texture2D" uid="uid://tec7v30sehul" path="res://assets/npc/body/bb.png" id="2_abqhh"]
+[ext_resource type="Texture2D" uid="uid://wnsni8lgw8lj" path="res://assets/gameUI/talk-label.png" id="3_talk_label"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_npc"]
+radius = 108.0
+height = 244.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_solid"]
+radius = 30.0
+height = 108.0
+
+[node name="NPC" type="Area2D" unique_id=901168066]
+z_index = 1
+script = ExtResource("1_npc")
+
+[node name="BackHairSprite" type="Sprite2D" parent="." unique_id=911483582]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1548194624]
+texture = ExtResource("2_abqhh")
+
+[node name="BottomSprite" type="Sprite2D" parent="." unique_id=980653949]
+
+[node name="TopSprite" type="Sprite2D" parent="." unique_id=1412023600]
+
+[node name="FrontHairSprite" type="Sprite2D" parent="." unique_id=1631661125]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1218571590]
+position = Vector2(0, -5)
+shape = SubResource("CapsuleShape2D_npc")
+
+[node name="SolidBody" type="StaticBody2D" parent="." unique_id=443099504]
+position = Vector2(0, 34)
+
+[node name="SolidCollisionShape2D" type="CollisionShape2D" parent="SolidBody" unique_id=936533837]
+position = Vector2(0, -37)
+shape = SubResource("CapsuleShape2D_solid")
+
+[node name="NameLabel" type="Label" parent="." unique_id=792833461]
+visible = false
+offset_left = -80.0
+offset_top = -190.0
+offset_right = 80.0
+offset_bottom = -160.0
+text = "???"
+horizontal_alignment = 1
+
+[node name="PromptLabel" type="Label" parent="." unique_id=282375643]
+offset_left = -55.0
+offset_top = -150.0
+offset_right = 55.0
+offset_bottom = -120.0
+text = "E  Talk"
+horizontal_alignment = 1
+
+[node name="PromptSprite" type="Sprite2D" parent="." unique_id=514376433]
+position = Vector2(0, -138)
+scale = Vector2(0.3465732, 0.40306136)
+texture = ExtResource("3_talk_label")

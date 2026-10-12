@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://dn2ynqb16f830"]
+
+[ext_resource type="Script" uid="uid://cqu3g0ke8u2g8" path="res://scripts/room_generator.gd" id="1_hyk8p"]
+[ext_resource type="PackedScene" uid="uid://ctev1paaol2ed" path="res://scenes/npc.tscn" id="2_iuonh"]
+[ext_resource type="PackedScene" path="res://scenes/tutorial_overlay.tscn" id="3_tutorial"]
+
+[node name="main" type="Node2D" unique_id=2053669684]
+script = ExtResource("1_hyk8p")
+npc_scene = ExtResource("2_iuonh")
+
+[node name="TutorialOverlay" parent="." instance=ExtResource("3_tutorial")]

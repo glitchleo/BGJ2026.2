@@ -1,0 +1,36 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/tutorial_overlay.gd" id="1_tutorial_overlay"]
+[ext_resource type="Texture2D" path="res://assets/gameUI/tutorial1.png" id="2_tutorial_1"]
+[ext_resource type="Texture2D" path="res://assets/gameUI/tutorial2.png" id="3_tutorial_2"]
+[ext_resource type="Texture2D" path="res://assets/gameUI/tutorial3.png" id="4_tutorial_3"]
+[ext_resource type="Texture2D" path="res://assets/gameUI/tutorial4.png" id="5_tutorial_4"]
+[ext_resource type="Texture2D" path="res://assets/gameUI/tutorial5.png" id="6_tutorial_5"]
+[ext_resource type="Texture2D" path="res://assets/gameUI/tutorial6.png" id="7_tutorial_6"]
+[ext_resource type="Texture2D" path="res://assets/gameUI/tutorial7.png" id="8_tutorial_7"]
+[ext_resource type="Texture2D" path="res://assets/gameUI/tutorial8.png" id="9_tutorial_8"]
+
+[node name="TutorialOverlay" type="CanvasLayer"]
+process_mode = 3
+layer = 250
+script = ExtResource("1_tutorial_overlay")
+frames = Array[Texture2D]([ExtResource("2_tutorial_1"), ExtResource("3_tutorial_2"), ExtResource("4_tutorial_3"), ExtResource("5_tutorial_4"), ExtResource("6_tutorial_5"), ExtResource("7_tutorial_6"), ExtResource("8_tutorial_7"), ExtResource("9_tutorial_8")])
+
+[node name="Root" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+
+[node name="FrameTexture" type="TextureRect" parent="Root"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 0

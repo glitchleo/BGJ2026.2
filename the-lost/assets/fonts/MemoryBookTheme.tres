@@ -1,0 +1,19 @@
+[gd_resource type="Theme" format=3 uid="uid://dcekm1b7j6bta"]
+
+[ext_resource type="FontFile" uid="uid://cbeo68kaubwfi" path="res://assets/fonts/PatrickHand-Regular.ttf" id="1_book_font"]
+
+[resource]
+default_font = ExtResource("1_book_font")
+default_font_size = 30
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/font_sizes/font_size = 26
+Button/fonts/font = ExtResource("1_book_font")
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/font_sizes/font_size = 30
+Label/fonts/font = ExtResource("1_book_font")
+RichTextLabel/colors/default_color = Color(0, 0, 0, 1)
+RichTextLabel/constants/line_separation = 0
+RichTextLabel/font_sizes/bold_font_size = 30
+RichTextLabel/font_sizes/normal_font_size = 30
+RichTextLabel/fonts/bold_font = ExtResource("1_book_font")
+RichTextLabel/fonts/normal_font = ExtResource("1_book_font")

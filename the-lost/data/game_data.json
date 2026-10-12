@@ -1,0 +1,1004 @@
+{
+  "schema_version": 1,
+  "world": {
+    "city": "Merun City",
+    "university": "Sorel Academy"
+  },
+  "characters": {
+    "mc": {
+      "name": "Lamb",
+      "age": 25,
+      "home": "Lives alone in Merun City",
+      "profession": "Interior designer"
+    },
+    "girlfriend": {
+      "name": "Saeli",
+      "relation": "Girlfriend and former best friend",
+      "current_stage": "University student",
+      "visit_pattern": "Usually stays with Lamb on weekends"
+    },
+    "brother": {
+      "name": "Oryn",
+      "relation": "Younger brother",
+      "location": "Lives with family in another city"
+    },
+    "uncle": {
+      "name": "Naven",
+      "relation": "Uncle",
+      "history": "Lamb stayed with him after moving to Merun City for high school"
+    }
+  },
+  "canon": {
+    "mc_age": 25,
+    "lives_alone": true,
+    "favorite_flower": "Roses",
+    "favorite_color": "Red",
+    "spicy_food": "Likes",
+    "desserts": "Neutral",
+    "profession": "Interior designer",
+    "education": "Design graduate from Sorel Academy",
+    "family_location": "Another city",
+    "younger_brother": "Oryn",
+    "move_history": "Moved to Merun City for high school and stayed with Naven",
+    "university_housing": "Moved into her own home when university started",
+    "favorite_movie_genre": "Science-fiction",
+    "romance_movies": "Dislikes",
+    "cooking_skill": "Bad",
+    "exercise": "Mostly walking",
+    "sports": "Hates",
+    "hot_temperatures": "Hates",
+    "animals": "Likes cats and dogs",
+    "academic_history": "Very good student from high school onward",
+    "social_history": "Had many friends",
+    "best_friend": "Saeli",
+    "girlfriend": "Saeli",
+    "relationship_history": "Saeli was Lamb's best friend before they started dating during university",
+    "girlfriend_weekends": true
+  },
+  "lost_meter": {
+    "minimum": 0.0,
+    "maximum": 100.0,
+    "starting_value": 70.0,
+    "rank_values": {
+      "MINOR": 3.0,
+      "IMPORTANT": 6.0,
+      "CORE": 10.0
+    },
+    "belief_multipliers": {
+      "DISCOVERED": 0.25,
+      "UNCERTAIN": 0.25,
+      "CORRECT": 1.0,
+      "WRONG": -0.5
+    }
+  },
+  "npc_generation": {
+    "name_length": 3,
+    "name_patterns": [
+      {
+        "pattern": "CVC",
+        "weight": 0.48
+      },
+      {
+        "pattern": "VCV",
+        "weight": 0.18
+      },
+      {
+        "pattern": "CVV",
+        "weight": 0.18
+      },
+      {
+        "pattern": "CCV",
+        "weight": 0.16
+      }
+    ],
+    "consonants": [
+      "v",
+      "z",
+      "x",
+      "k",
+      "r",
+      "n",
+      "s",
+      "l",
+      "m",
+      "t",
+      "d",
+      "g",
+      "f",
+      "h"
+    ],
+    "vowels": [
+      "a",
+      "e",
+      "i",
+      "o",
+      "u",
+      "y"
+    ],
+    "clusters": [
+      "vr",
+      "zr",
+      "kr",
+      "ny",
+      "sy",
+      "th",
+      "sh",
+      "vl",
+      "dr",
+      "ky",
+      "zh",
+      "ry"
+    ],
+    "forbidden_names": [
+      "ben",
+      "sam",
+      "tom",
+      "tim",
+      "bob",
+      "joe",
+      "leo",
+      "max",
+      "mia",
+      "ava",
+      "eva",
+      "eli",
+      "ana",
+      "ian",
+      "zoe",
+      "kai",
+      "rex",
+      "ray",
+      "roy",
+      "amy"
+    ],
+    "profiles": [
+      {
+        "id": "STRANGER",
+        "weight": 0.3,
+        "memory_min": 0,
+        "memory_max": 0,
+        "allowed_categories": []
+      },
+      {
+        "id": "CASUAL_LOCAL",
+        "weight": 0.2,
+        "memory_min": 0,
+        "memory_max": 1,
+        "allowed_categories": [
+          "IDENTITY",
+          "PREFERENCES"
+        ]
+      },
+      {
+        "id": "NEIGHBOR",
+        "weight": 0.12,
+        "memory_min": 0,
+        "memory_max": 2,
+        "allowed_categories": [
+          "PLACES",
+          "PREFERENCES",
+          "SOCIAL"
+        ]
+      },
+      {
+        "id": "SCHOOLMATE",
+        "weight": 0.12,
+        "memory_min": 1,
+        "memory_max": 2,
+        "allowed_categories": [
+          "SCHOOL_CAREER",
+          "SOCIAL",
+          "EVENTS",
+          "FAMILY"
+        ]
+      },
+      {
+        "id": "UNIVERSITY_PEER",
+        "weight": 0.12,
+        "memory_min": 1,
+        "memory_max": 2,
+        "allowed_categories": [
+          "SCHOOL_CAREER",
+          "SOCIAL",
+          "EVENTS",
+          "PLACES"
+        ]
+      },
+      {
+        "id": "COWORKER",
+        "weight": 0.1,
+        "memory_min": 1,
+        "memory_max": 2,
+        "allowed_categories": [
+          "SCHOOL_CAREER",
+          "PREFERENCES",
+          "SOCIAL"
+        ]
+      },
+      {
+        "id": "FRIEND_OF_FRIEND",
+        "weight": 0.04,
+        "memory_min": 1,
+        "memory_max": 2,
+        "allowed_categories": [
+          "SOCIAL",
+          "PREFERENCES",
+          "IDENTITY",
+          "EVENTS"
+        ]
+      }
+    ]
+  },
+  "memories": [
+    {
+      "id": "M001",
+      "text": "I am 25 years old.",
+      "npc_text": "You are 25 years old.",
+      "category": "IDENTITY",
+      "topic": "Age",
+      "rank": "IMPORTANT",
+      "actual_truth": true,
+      "conflict_group": "age",
+      "claim_value": "age_25"
+    },
+    {
+      "id": "M002",
+      "text": "I am 22 years old.",
+      "npc_text": "You are 22 years old.",
+      "category": "IDENTITY",
+      "topic": "Age",
+      "rank": "IMPORTANT",
+      "actual_truth": false,
+      "conflict_group": "age",
+      "claim_value": "age_22"
+    },
+    {
+      "id": "M003",
+      "text": "I live alone.",
+      "npc_text": "You live alone.",
+      "category": "PLACES",
+      "topic": "Current household",
+      "rank": "CORE",
+      "actual_truth": true,
+      "conflict_group": "current_household",
+      "claim_value": "lives_alone"
+    },
+    {
+      "id": "M004",
+      "text": "I live with Saeli.",
+      "npc_text": "You live with Saeli.",
+      "category": "PLACES",
+      "topic": "Current household",
+      "rank": "CORE",
+      "actual_truth": false,
+      "conflict_group": "current_household",
+      "claim_value": "lives_with_girlfriend"
+    },
+    {
+      "id": "M005",
+      "text": "I share my home with a roommate.",
+      "npc_text": "You share your home with a roommate.",
+      "category": "PLACES",
+      "topic": "Current household",
+      "rank": "CORE",
+      "actual_truth": false,
+      "conflict_group": "current_household",
+      "claim_value": "lives_with_roommate"
+    },
+    {
+      "id": "M006",
+      "text": "I still live with Naven.",
+      "npc_text": "You still live with Naven.",
+      "category": "PLACES",
+      "topic": "Current household",
+      "rank": "CORE",
+      "actual_truth": false,
+      "conflict_group": "current_household",
+      "claim_value": "lives_with_uncle"
+    },
+    {
+      "id": "M007",
+      "text": "My family lives in another city.",
+      "npc_text": "Your family lives in another city.",
+      "category": "FAMILY",
+      "topic": "Family location",
+      "rank": "IMPORTANT",
+      "actual_truth": true,
+      "conflict_group": "",
+      "claim_value": "family_other_city"
+    },
+    {
+      "id": "M008",
+      "text": "Oryn is my younger brother.",
+      "npc_text": "Oryn is your younger brother.",
+      "category": "FAMILY",
+      "topic": "Sibling",
+      "rank": "IMPORTANT",
+      "actual_truth": true,
+      "conflict_group": "sibling_identity",
+      "claim_value": "younger_brother_oryn"
+    },
+    {
+      "id": "M009",
+      "text": "Oryn is my older brother.",
+      "npc_text": "Oryn is your older brother.",
+      "category": "FAMILY",
+      "topic": "Sibling",
+      "rank": "IMPORTANT",
+      "actual_truth": false,
+      "conflict_group": "sibling_identity",
+      "claim_value": "older_brother_oryn"
+    },
+    {
+      "id": "M010",
+      "text": "Oryn is my cousin, not my brother.",
+      "npc_text": "Oryn is your cousin, not your brother.",
+      "category": "FAMILY",
+      "topic": "Sibling",
+      "rank": "IMPORTANT",
+      "actual_truth": false,
+      "conflict_group": "sibling_identity",
+      "claim_value": "cousin_oryn"
+    },
+    {
+      "id": "M011",
+      "text": "I moved to Merun City while I was still in high school.",
+      "npc_text": "You moved to Merun City while you were still in high school.",
+      "category": "EVENTS",
+      "topic": "Move to Merun City",
+      "rank": "IMPORTANT",
+      "actual_truth": true,
+      "conflict_group": "city_move_stage",
+      "claim_value": "moved_for_highschool"
+    },
+    {
+      "id": "M012",
+      "text": "I first moved to Merun City when I started university.",
+      "npc_text": "You first moved to Merun City when you started university.",
+      "category": "EVENTS",
+      "topic": "Move to Merun City",
+      "rank": "IMPORTANT",
+      "actual_truth": false,
+      "conflict_group": "city_move_stage",
+      "claim_value": "moved_for_university"
+    },
+    {
+      "id": "M013",
+      "text": "I only came to Merun City after university to find work.",
+      "npc_text": "You only came to Merun City after university to find work.",
+      "category": "EVENTS",
+      "topic": "Move to Merun City",
+      "rank": "IMPORTANT",
+      "actual_truth": false,
+      "conflict_group": "city_move_stage",
+      "claim_value": "moved_for_work"
+    },
+    {
+      "id": "M014",
+      "text": "I stayed with Naven when I first moved to Merun City.",
+      "npc_text": "You stayed with Naven when you first moved to Merun City.",
+      "category": "PLACES",
+      "topic": "High school housing",
+      "rank": "IMPORTANT",
+      "actual_truth": true,
+      "conflict_group": "highschool_housing",
+      "claim_value": "lived_with_uncle"
+    },
+    {
+      "id": "M015",
+      "text": "I lived in a student dorm during high school.",
+      "npc_text": "You lived in a student dorm during high school.",
+      "category": "PLACES",
+      "topic": "High school housing",
+      "rank": "IMPORTANT",
+      "actual_truth": false,
+      "conflict_group": "highschool_housing",
+      "claim_value": "lived_in_dorm"
+    },
+    {
+      "id": "M016",
+      "text": "I already had my own home when I moved here for high school.",
+      "npc_text": "You already had your own home when you moved here for high school.",
+      "category": "PLACES",
+      "topic": "High school housing",
+      "rank": "IMPORTANT",
+      "actual_truth": false,
+      "conflict_group": "highschool_housing",
+      "claim_value": "lived_alone"
+    },
+    {
+      "id": "M017",
+      "text": "I was a very good student in high school.",
+      "npc_text": "You were a very good student in high school.",
+      "category": "SCHOOL_CAREER",
+      "topic": "Academic performance",
+      "rank": "IMPORTANT",
+      "actual_truth": true,
+      "conflict_group": "",
+      "claim_value": "high_achiever"
+    },
+    {
+      "id": "M018",
+      "text": "I studied design at Sorel Academy.",
+      "npc_text": "You studied design at Sorel Academy.",
+      "category": "SCHOOL_CAREER",
+      "topic": "University field",
+      "rank": "CORE",
+      "actual_truth": true,
+      "conflict_group": "university_field",
+      "claim_value": "design"
+    },
+    {
+      "id": "M019",
+      "text": "I studied architecture at Sorel Academy.",
+      "npc_text": "You studied architecture at Sorel Academy.",
+      "category": "SCHOOL_CAREER",
+      "topic": "University field",
+      "rank": "CORE",
+      "actual_truth": false,
+      "conflict_group": "university_field",
+      "claim_value": "architecture"
+    },
+    {
+      "id": "M020",
+      "text": "I studied engineering at Sorel Academy.",
+      "npc_text": "You studied engineering at Sorel Academy.",
+      "category": "SCHOOL_CAREER",
+      "topic": "University field",
+      "rank": "CORE",
+      "actual_truth": false,
+      "conflict_group": "university_field",
+      "claim_value": "engineering"
+    },
+    {
+      "id": "M021",
+      "text": "I moved into my own home when I started university.",
+      "npc_text": "You moved into your own home when you started university.",
+      "category": "PLACES",
+      "topic": "University housing",
+      "rank": "IMPORTANT",
+      "actual_truth": true,
+      "conflict_group": "university_housing",
+      "claim_value": "lived_alone"
+    },
+    {
+      "id": "M022",
+      "text": "I continued living with Naven throughout university.",
+      "npc_text": "You continued living with Naven throughout university.",
+      "category": "PLACES",
+      "topic": "University housing",
+      "rank": "IMPORTANT",
+      "actual_truth": false,
+      "conflict_group": "university_housing",
+      "claim_value": "lived_with_uncle"
+    },
+    {
+      "id": "M023",
+      "text": "I lived in a university dorm.",
+      "npc_text": "You lived in a university dorm.",
+      "category": "PLACES",
+      "topic": "University housing",
+      "rank": "IMPORTANT",
+      "actual_truth": false,
+      "conflict_group": "university_housing",
+      "claim_value": "lived_in_dorm"
+    },
+    {
+      "id": "M024",
+      "text": "I work as an interior designer.",
+      "npc_text": "You work as an interior designer.",
+      "category": "SCHOOL_CAREER",
+      "topic": "Profession",
+      "rank": "CORE",
+      "actual_truth": true,
+      "conflict_group": "profession",
+      "claim_value": "interior_designer"
+    },
+    {
+      "id": "M025",
+      "text": "I work as an architect.",
+      "npc_text": "You work as an architect.",
+      "category": "SCHOOL_CAREER",
+      "topic": "Profession",
+      "rank": "CORE",
+      "actual_truth": false,
+      "conflict_group": "profession",
+      "claim_value": "architect"
+    },
+    {
+      "id": "M026",
+      "text": "I work as a graphic designer.",
+      "npc_text": "You work as a graphic designer.",
+      "category": "SCHOOL_CAREER",
+      "topic": "Profession",
+      "rank": "CORE",
+      "actual_truth": false,
+      "conflict_group": "profession",
+      "claim_value": "graphic_designer"
+    },
+    {
+      "id": "M027",
+      "text": "I work in a flower shop.",
+      "npc_text": "You work in a flower shop.",
+      "category": "SCHOOL_CAREER",
+      "topic": "Profession",
+      "rank": "CORE",
+      "actual_truth": false,
+      "conflict_group": "profession",
+      "claim_value": "florist"
+    },
+    {
+      "id": "M028",
+      "text": "I finished university and started working afterward.",
+      "npc_text": "You finished university and started working afterward.",
+      "category": "SCHOOL_CAREER",
+      "topic": "Career stage",
+      "rank": "IMPORTANT",
+      "actual_truth": true,
+      "conflict_group": "",
+      "claim_value": "graduated_and_working"
+    },
+    {
+      "id": "M029",
+      "text": "Roses are my favorite flowers.",
+      "npc_text": "Roses are your favorite flowers.",
+      "category": "PREFERENCES",
+      "topic": "Flowers",
+      "rank": "MINOR",
+      "actual_truth": true,
+      "conflict_group": "favorite_flower",
+      "claim_value": "roses"
+    },
+    {
+      "id": "M030",
+      "text": "Lilies are my favorite flowers.",
+      "npc_text": "Lilies are your favorite flowers.",
+      "category": "PREFERENCES",
+      "topic": "Flowers",
+      "rank": "MINOR",
+      "actual_truth": false,
+      "conflict_group": "favorite_flower",
+      "claim_value": "lilies"
+    },
+    {
+      "id": "M031",
+      "text": "Sunflowers are my favorite flowers.",
+      "npc_text": "Sunflowers are your favorite flowers.",
+      "category": "PREFERENCES",
+      "topic": "Flowers",
+      "rank": "MINOR",
+      "actual_truth": false,
+      "conflict_group": "favorite_flower",
+      "claim_value": "sunflowers"
+    },
+    {
+      "id": "M032",
+      "text": "Red is my favorite color.",
+      "npc_text": "Red is your favorite color.",
+      "category": "PREFERENCES",
+      "topic": "Color",
+      "rank": "MINOR",
+      "actual_truth": true,
+      "conflict_group": "favorite_color",
+      "claim_value": "red"
+    },
+    {
+      "id": "M033",
+      "text": "Blue is my favorite color.",
+      "npc_text": "Blue is your favorite color.",
+      "category": "PREFERENCES",
+      "topic": "Color",
+      "rank": "MINOR",
+      "actual_truth": false,
+      "conflict_group": "favorite_color",
+      "claim_value": "blue"
+    },
+    {
+      "id": "M034",
+      "text": "I really like spicy food.",
+      "npc_text": "You really like spicy food.",
+      "category": "PREFERENCES",
+      "topic": "Food",
+      "rank": "MINOR",
+      "actual_truth": true,
+      "conflict_group": "spice_preference",
+      "claim_value": "likes_spicy"
+    },
+    {
+      "id": "M035",
+      "text": "I hate spicy food and always choose mild food.",
+      "npc_text": "You hate spicy food and always choose mild food.",
+      "category": "PREFERENCES",
+      "topic": "Food",
+      "rank": "MINOR",
+      "actual_truth": false,
+      "conflict_group": "spice_preference",
+      "claim_value": "hates_spicy"
+    },
+    {
+      "id": "M036",
+      "text": "I avoid spicy food whenever I can.",
+      "npc_text": "You avoid spicy food whenever you can.",
+      "category": "PREFERENCES",
+      "topic": "Food",
+      "rank": "MINOR",
+      "actual_truth": false,
+      "conflict_group": "spice_preference",
+      "claim_value": "avoids_spicy"
+    },
+    {
+      "id": "M037",
+      "text": "I am neutral toward desserts.",
+      "npc_text": "You are pretty neutral toward desserts.",
+      "category": "PREFERENCES",
+      "topic": "Desserts",
+      "rank": "MINOR",
+      "actual_truth": true,
+      "conflict_group": "dessert_preference",
+      "claim_value": "neutral"
+    },
+    {
+      "id": "M038",
+      "text": "I have a huge sweet tooth.",
+      "npc_text": "You have a huge sweet tooth.",
+      "category": "PREFERENCES",
+      "topic": "Desserts",
+      "rank": "MINOR",
+      "actual_truth": false,
+      "conflict_group": "dessert_preference",
+      "claim_value": "loves_desserts"
+    },
+    {
+      "id": "M039",
+      "text": "I hate desserts.",
+      "npc_text": "You hate desserts.",
+      "category": "PREFERENCES",
+      "topic": "Desserts",
+      "rank": "MINOR",
+      "actual_truth": false,
+      "conflict_group": "dessert_preference",
+      "claim_value": "hates_desserts"
+    },
+    {
+      "id": "M040",
+      "text": "Science-fiction is my favorite kind of movie.",
+      "npc_text": "Science-fiction is your favorite kind of movie.",
+      "category": "PREFERENCES",
+      "topic": "Movies",
+      "rank": "MINOR",
+      "actual_truth": true,
+      "conflict_group": "favorite_movie_genre",
+      "claim_value": "scifi"
+    },
+    {
+      "id": "M041",
+      "text": "Romance is my favorite kind of movie.",
+      "npc_text": "Romance is your favorite kind of movie.",
+      "category": "PREFERENCES",
+      "topic": "Movies",
+      "rank": "MINOR",
+      "actual_truth": false,
+      "conflict_group": "favorite_movie_genre",
+      "claim_value": "romance"
+    },
+    {
+      "id": "M042",
+      "text": "Horror movies are always my first choice.",
+      "npc_text": "Horror movies are always your first choice.",
+      "category": "PREFERENCES",
+      "topic": "Movies",
+      "rank": "MINOR",
+      "actual_truth": false,
+      "conflict_group": "favorite_movie_genre",
+      "claim_value": "horror"
+    },
+    {
+      "id": "M043",
+      "text": "I do not really enjoy romance movies.",
+      "npc_text": "You do not really enjoy romance movies.",
+      "category": "PREFERENCES",
+      "topic": "Romance media",
+      "rank": "MINOR",
+      "actual_truth": true,
+      "conflict_group": "",
+      "claim_value": "dislikes_romance"
+    },
+    {
+      "id": "M044",
+      "text": "I am a pretty bad cook.",
+      "npc_text": "You are a pretty bad cook.",
+      "category": "PREFERENCES",
+      "topic": "Cooking skill",
+      "rank": "MINOR",
+      "actual_truth": true,
+      "conflict_group": "cooking_skill",
+      "claim_value": "bad_cook"
+    },
+    {
+      "id": "M045",
+      "text": "I am an excellent cook.",
+      "npc_text": "You are an excellent cook.",
+      "category": "PREFERENCES",
+      "topic": "Cooking skill",
+      "rank": "MINOR",
+      "actual_truth": false,
+      "conflict_group": "cooking_skill",
+      "claim_value": "excellent_cook"
+    },
+    {
+      "id": "M046",
+      "text": "Walking is basically the only exercise I regularly get.",
+      "npc_text": "Walking is basically the only exercise you regularly get.",
+      "category": "PREFERENCES",
+      "topic": "Exercise",
+      "rank": "MINOR",
+      "actual_truth": true,
+      "conflict_group": "exercise_habit",
+      "claim_value": "walking_only"
+    },
+    {
+      "id": "M047",
+      "text": "I go to the gym regularly.",
+      "npc_text": "You go to the gym regularly.",
+      "category": "PREFERENCES",
+      "topic": "Exercise",
+      "rank": "MINOR",
+      "actual_truth": false,
+      "conflict_group": "exercise_habit",
+      "claim_value": "gym"
+    },
+    {
+      "id": "M048",
+      "text": "I regularly go running.",
+      "npc_text": "You regularly go running.",
+      "category": "PREFERENCES",
+      "topic": "Exercise",
+      "rank": "MINOR",
+      "actual_truth": false,
+      "conflict_group": "exercise_habit",
+      "claim_value": "running"
+    },
+    {
+      "id": "M049",
+      "text": "I hate sports.",
+      "npc_text": "You hate sports.",
+      "category": "PREFERENCES",
+      "topic": "Sports",
+      "rank": "MINOR",
+      "actual_truth": true,
+      "conflict_group": "sports_attitude",
+      "claim_value": "hates_sports"
+    },
+    {
+      "id": "M050",
+      "text": "I love playing sports.",
+      "npc_text": "You love playing sports.",
+      "category": "PREFERENCES",
+      "topic": "Sports",
+      "rank": "MINOR",
+      "actual_truth": false,
+      "conflict_group": "sports_attitude",
+      "claim_value": "loves_playing_sports"
+    },
+    {
+      "id": "M051",
+      "text": "I am a huge sports fan.",
+      "npc_text": "You are a huge sports fan.",
+      "category": "PREFERENCES",
+      "topic": "Sports",
+      "rank": "MINOR",
+      "actual_truth": false,
+      "conflict_group": "sports_attitude",
+      "claim_value": "sports_fan"
+    },
+    {
+      "id": "M052",
+      "text": "I cannot stand hot weather.",
+      "npc_text": "You cannot stand hot weather.",
+      "category": "PREFERENCES",
+      "topic": "Temperature",
+      "rank": "MINOR",
+      "actual_truth": true,
+      "conflict_group": "temperature_preference",
+      "claim_value": "hates_heat"
+    },
+    {
+      "id": "M053",
+      "text": "I love really hot summer days.",
+      "npc_text": "You love really hot summer days.",
+      "category": "PREFERENCES",
+      "topic": "Temperature",
+      "rank": "MINOR",
+      "actual_truth": false,
+      "conflict_group": "temperature_preference",
+      "claim_value": "loves_heat"
+    },
+    {
+      "id": "M054",
+      "text": "I like both cats and dogs.",
+      "npc_text": "You like both cats and dogs.",
+      "category": "PREFERENCES",
+      "topic": "Animals",
+      "rank": "MINOR",
+      "actual_truth": true,
+      "conflict_group": "animal_preference",
+      "claim_value": "likes_cats_and_dogs"
+    },
+    {
+      "id": "M055",
+      "text": "I like dogs, but I cannot stand cats.",
+      "npc_text": "You like dogs, but you cannot stand cats.",
+      "category": "PREFERENCES",
+      "topic": "Animals",
+      "rank": "MINOR",
+      "actual_truth": false,
+      "conflict_group": "animal_preference",
+      "claim_value": "dogs_only"
+    },
+    {
+      "id": "M056",
+      "text": "I do not really like having animals around.",
+      "npc_text": "You do not really like having animals around.",
+      "category": "PREFERENCES",
+      "topic": "Animals",
+      "rank": "MINOR",
+      "actual_truth": false,
+      "conflict_group": "animal_preference",
+      "claim_value": "dislikes_animals"
+    },
+    {
+      "id": "M057",
+      "text": "I had a lot of friends in high school.",
+      "npc_text": "You had a lot of friends in high school.",
+      "category": "SOCIAL",
+      "topic": "Social circle",
+      "rank": "IMPORTANT",
+      "actual_truth": true,
+      "conflict_group": "social_circle",
+      "claim_value": "many_friends"
+    },
+    {
+      "id": "M058",
+      "text": "I mostly kept to myself in high school.",
+      "npc_text": "You mostly kept to yourself in high school.",
+      "category": "SOCIAL",
+      "topic": "Social circle",
+      "rank": "IMPORTANT",
+      "actual_truth": false,
+      "conflict_group": "social_circle",
+      "claim_value": "loner"
+    },
+    {
+      "id": "M059",
+      "text": "I never really had a friend group.",
+      "npc_text": "You never really had a friend group.",
+      "category": "SOCIAL",
+      "topic": "Social circle",
+      "rank": "IMPORTANT",
+      "actual_truth": false,
+      "conflict_group": "social_circle",
+      "claim_value": "no_friend_group"
+    },
+    {
+      "id": "M060",
+      "text": "Saeli was my best friend.",
+      "npc_text": "Saeli was your best friend.",
+      "category": "SOCIAL",
+      "topic": "Saeli relationship history",
+      "rank": "CORE",
+      "actual_truth": true,
+      "conflict_group": "relationship_past_saeli",
+      "claim_value": "best_friend"
+    },
+    {
+      "id": "M061",
+      "text": "Saeli and I were never particularly close.",
+      "npc_text": "You and Saeli were never particularly close.",
+      "category": "SOCIAL",
+      "topic": "Saeli relationship history",
+      "rank": "CORE",
+      "actual_truth": false,
+      "conflict_group": "relationship_past_saeli",
+      "claim_value": "not_close"
+    },
+    {
+      "id": "M062",
+      "text": "Saeli and I could not stand each other back then.",
+      "npc_text": "You and Saeli could not stand each other back then.",
+      "category": "SOCIAL",
+      "topic": "Saeli relationship history",
+      "rank": "CORE",
+      "actual_truth": false,
+      "conflict_group": "relationship_past_saeli",
+      "claim_value": "disliked_each_other"
+    },
+    {
+      "id": "M063",
+      "text": "Saeli is my girlfriend.",
+      "npc_text": "Saeli is your girlfriend.",
+      "category": "SOCIAL",
+      "topic": "Current relationship",
+      "rank": "CORE",
+      "actual_truth": true,
+      "conflict_group": "relationship_current_saeli",
+      "claim_value": "girlfriend"
+    },
+    {
+      "id": "M064",
+      "text": "Saeli and I never dated. We are only friends.",
+      "npc_text": "You and Saeli never dated. You are only friends.",
+      "category": "SOCIAL",
+      "topic": "Current relationship",
+      "rank": "CORE",
+      "actual_truth": false,
+      "conflict_group": "relationship_current_saeli",
+      "claim_value": "just_friends"
+    },
+    {
+      "id": "M065",
+      "text": "Saeli is my ex-girlfriend.",
+      "npc_text": "Saeli is your ex-girlfriend.",
+      "category": "SOCIAL",
+      "topic": "Current relationship",
+      "rank": "CORE",
+      "actual_truth": false,
+      "conflict_group": "relationship_current_saeli",
+      "claim_value": "ex_girlfriend"
+    },
+    {
+      "id": "M066",
+      "text": "Saeli and I started dating while we were at university.",
+      "npc_text": "You and Saeli started dating while you were at university.",
+      "category": "EVENTS",
+      "topic": "Relationship history",
+      "rank": "CORE",
+      "actual_truth": true,
+      "conflict_group": "",
+      "claim_value": "began_dating_during_university"
+    },
+    {
+      "id": "M067",
+      "text": "Saeli is still studying at university.",
+      "npc_text": "Saeli is still studying at university.",
+      "category": "SOCIAL",
+      "topic": "Saeli current stage",
+      "rank": "IMPORTANT",
+      "actual_truth": true,
+      "conflict_group": "girlfriend_current_stage",
+      "claim_value": "university_student"
+    },
+    {
+      "id": "M068",
+      "text": "Saeli already graduated and works full-time.",
+      "npc_text": "Saeli already graduated and works full-time.",
+      "category": "SOCIAL",
+      "topic": "Saeli current stage",
+      "rank": "IMPORTANT",
+      "actual_truth": false,
+      "conflict_group": "girlfriend_current_stage",
+      "claim_value": "graduated_working"
+    },
+    {
+      "id": "M069",
+      "text": "Saeli usually comes to my place on weekends.",
+      "npc_text": "Saeli usually comes to your place on weekends.",
+      "category": "SOCIAL",
+      "topic": "Saeli visits",
+      "rank": "IMPORTANT",
+      "actual_truth": true,
+      "conflict_group": "girlfriend_visit_pattern",
+      "claim_value": "weekends"
+    },
+    {
+      "id": "M070",
+      "text": "Saeli only visits me during holidays.",
+      "npc_text": "Saeli only visits you during holidays.",
+      "category": "SOCIAL",
+      "topic": "Saeli visits",
+      "rank": "IMPORTANT",
+      "actual_truth": false,
+      "conflict_group": "girlfriend_visit_pattern",
+      "claim_value": "holidays_only"
+    }
+  ]
+}

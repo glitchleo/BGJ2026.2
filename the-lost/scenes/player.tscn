@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://vgopf7xpbdn2"]
+
+[ext_resource type="Texture2D" uid="uid://b452ba5mn846o" path="res://assets/sprite/mc-front.png" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://lsdaheqgn3ue" path="res://scripts/player.gd" id="1_g2els"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_snsd4"]
+radius = 32.0
+height = 228.0
+
+[node name="Player" type="CharacterBody2D" unique_id=1937135123]
+z_index = 1
+script = ExtResource("1_g2els")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=401847166]
+texture = ExtResource("1_3vyb7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1798438087]
+shape = SubResource("CapsuleShape2D_snsd4")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1605468702]

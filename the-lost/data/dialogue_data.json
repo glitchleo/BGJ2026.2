@@ -1,0 +1,1976 @@
+{
+  "schema_version": 1,
+  "dialogue_generation": {
+    "profile_attitudes": {
+      "STRANGER": [
+        {
+          "id": "friendly",
+          "weight": 0.35
+        },
+        {
+          "id": "awkward",
+          "weight": 0.25
+        },
+        {
+          "id": "suspicious",
+          "weight": 0.2
+        },
+        {
+          "id": "tired",
+          "weight": 0.2
+        }
+      ],
+      "CASUAL_LOCAL": [
+        {
+          "id": "friendly",
+          "weight": 0.35
+        },
+        {
+          "id": "curious",
+          "weight": 0.25
+        },
+        {
+          "id": "careful",
+          "weight": 0.25
+        },
+        {
+          "id": "amused",
+          "weight": 0.15
+        }
+      ],
+      "NEIGHBOR": [
+        {
+          "id": "observant",
+          "weight": 0.35
+        },
+        {
+          "id": "concerned",
+          "weight": 0.3
+        },
+        {
+          "id": "nosy",
+          "weight": 0.2
+        },
+        {
+          "id": "careful",
+          "weight": 0.15
+        }
+      ],
+      "SCHOOLMATE": [
+        {
+          "id": "nostalgic",
+          "weight": 0.28
+        },
+        {
+          "id": "awkward",
+          "weight": 0.23
+        },
+        {
+          "id": "warm",
+          "weight": 0.24
+        },
+        {
+          "id": "uncertain",
+          "weight": 0.17
+        },
+        {
+          "id": "bitter",
+          "weight": 0.08
+        }
+      ],
+      "UNIVERSITY_PEER": [
+        {
+          "id": "friendly",
+          "weight": 0.3
+        },
+        {
+          "id": "nostalgic",
+          "weight": 0.25
+        },
+        {
+          "id": "overconfident",
+          "weight": 0.2
+        },
+        {
+          "id": "careful",
+          "weight": 0.25
+        }
+      ],
+      "COWORKER": [
+        {
+          "id": "amused",
+          "weight": 0.3
+        },
+        {
+          "id": "tired",
+          "weight": 0.25
+        },
+        {
+          "id": "friendly",
+          "weight": 0.25
+        },
+        {
+          "id": "blunt",
+          "weight": 0.2
+        }
+      ],
+      "FRIEND_OF_FRIEND": [
+        {
+          "id": "uncertain",
+          "weight": 0.3
+        },
+        {
+          "id": "gossipy",
+          "weight": 0.24
+        },
+        {
+          "id": "careful",
+          "weight": 0.23
+        },
+        {
+          "id": "awkward",
+          "weight": 0.13
+        },
+        {
+          "id": "bitter",
+          "weight": 0.1
+        }
+      ]
+    },
+    "introduction_dialogues": [
+      {
+        "profiles": [
+          "STRANGER"
+        ],
+        "attitudes": [
+          "friendly"
+        ],
+        "lines": [
+          "Hi. I'm {npc_name}.",
+          "I do not think we have properly met, Lamb."
+        ]
+      },
+      {
+        "profiles": [
+          "STRANGER"
+        ],
+        "attitudes": [
+          "awkward",
+          "tired"
+        ],
+        "lines": [
+          "Um. I'm {npc_name}.",
+          "Sorry, I am trying to place you, but nothing is landing."
+        ]
+      },
+      {
+        "profiles": [
+          "STRANGER"
+        ],
+        "attitudes": [
+          "suspicious"
+        ],
+        "lines": [
+          "My name is {npc_name}.",
+          "Before you ask, I am not sure you should be trusting strangers with this."
+        ]
+      },
+      {
+        "profiles": [
+          "CASUAL_LOCAL"
+        ],
+        "attitudes": [
+          "friendly",
+          "curious",
+          "amused"
+        ],
+        "lines": [
+          "Oh. Lamb, right?",
+          "I'm {npc_name}. We have crossed paths around {city} enough times that your face stuck."
+        ]
+      },
+      {
+        "profiles": [
+          "CASUAL_LOCAL"
+        ],
+        "attitudes": [
+          "careful"
+        ],
+        "lines": [
+          "I'm {npc_name}.",
+          "We are not close, but I know your name, and I know people have been worried."
+        ]
+      },
+      {
+        "profiles": [
+          "NEIGHBOR"
+        ],
+        "attitudes": [
+          "observant",
+          "nosy"
+        ],
+        "lines": [
+          "I'm {npc_name}.",
+          "I live near your building, so I notice more than I probably should."
+        ]
+      },
+      {
+        "profiles": [
+          "NEIGHBOR"
+        ],
+        "attitudes": [
+          "concerned",
+          "careful"
+        ],
+        "lines": [
+          "Lamb... I'm {npc_name}.",
+          "We are neighbors. Not friends exactly, but close enough that your door being quiet felt wrong."
+        ]
+      },
+      {
+        "profiles": [
+          "SCHOOLMATE"
+        ],
+        "attitudes": [
+          "nostalgic",
+          "warm"
+        ],
+        "lines": [
+          "It's me, {npc_name}.",
+          "We were at school together, back when {city} still felt too big for everyone."
+        ]
+      },
+      {
+        "profiles": [
+          "SCHOOLMATE"
+        ],
+        "attitudes": [
+          "awkward",
+          "uncertain",
+          "bitter"
+        ],
+        "lines": [
+          "I'm {npc_name}.",
+          "We knew each other at school, though I do not know what that makes me to you now."
+        ]
+      },
+      {
+        "profiles": [
+          "UNIVERSITY_PEER"
+        ],
+        "attitudes": [
+          "friendly",
+          "nostalgic",
+          "careful"
+        ],
+        "lines": [
+          "Hey, Lamb. I'm {npc_name}.",
+          "We overlapped at {university}; same late rooms, same tired faces."
+        ]
+      },
+      {
+        "profiles": [
+          "UNIVERSITY_PEER"
+        ],
+        "attitudes": [
+          "overconfident"
+        ],
+        "lines": [
+          "I'm {npc_name}.",
+          "You probably do not remember me, but I remember enough campus nonsense for both of us."
+        ]
+      },
+      {
+        "profiles": [
+          "COWORKER"
+        ],
+        "attitudes": [
+          "friendly",
+          "amused",
+          "tired",
+          "blunt"
+        ],
+        "lines": [
+          "I'm {npc_name}.",
+          "We worked around each other enough that I learned your habits before I learned how to pronounce half our clients' names."
+        ]
+      },
+      {
+        "profiles": [
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "uncertain",
+          "gossipy",
+          "careful",
+          "awkward",
+          "bitter"
+        ],
+        "lines": [
+          "I'm {npc_name}.",
+          "I know you mostly through other people's stories, so I should be honest about that first."
+        ]
+      },
+      {
+        "profiles": [],
+        "attitudes": [],
+        "lines": [
+          "I'm {npc_name}.",
+          "I will tell you what I can, but please hold it gently."
+        ]
+      }
+    ],
+    "uncertainty_prompts": [
+      {
+        "profiles": [],
+        "attitudes": [
+          "friendly",
+          "careful",
+          "concerned",
+          "uncertain",
+          "warm",
+          "nostalgic",
+          "awkward"
+        ],
+        "lines": [
+          "Before I say anything else, I should warn you.",
+          "This is not something I can swear to. The source is {source}.",
+          "It might help, or it might just give you another wrong shape to carry.",
+          "Do you still want to hear it?"
+        ],
+        "accept_text": "Tell me anyway.",
+        "accept_prefix_lines": [
+          "Alright.",
+          "Then I will give it to you carefully."
+        ],
+        "decline_text": "Leave that one alone.",
+        "decline_lines": [
+          "Okay.",
+          "That may be kinder than collecting every loose story people throw at you."
+        ]
+      },
+      {
+        "profiles": [],
+        "attitudes": [
+          "gossipy",
+          "nosy",
+          "amused",
+          "overconfident"
+        ],
+        "lines": [
+          "I do have something, but it is messy.",
+          "It came through {source}, so please do not carve it into stone.",
+          "Do you want the messy version anyway?"
+        ],
+        "accept_text": "I want the messy version.",
+        "accept_prefix_lines": [
+          "Alright, messy version it is.",
+          "Just remember I warned you."
+        ],
+        "decline_text": "No rumors.",
+        "decline_lines": [
+          "Fair.",
+          "Probably the healthiest thing anyone has said in this town today."
+        ]
+      },
+      {
+        "profiles": [],
+        "attitudes": [
+          "suspicious",
+          "blunt",
+          "bitter",
+          "tired"
+        ],
+        "lines": [
+          "I can answer, but not cleanly.",
+          "What I know is tangled up with {source}.",
+          "If I tell you, you have to decide whether it belongs in that book.",
+          "Do you want it?"
+        ],
+        "accept_text": "Say it.",
+        "accept_prefix_lines": [
+          "Fine.",
+          "Do not mistake this for certainty."
+        ],
+        "decline_text": "Keep it.",
+        "decline_lines": [
+          "Good.",
+          "Some things are worse when they pretend to be answers."
+        ]
+      }
+    ],
+    "memory_bridge_lines": [
+      "There is another thing, though.",
+      "If you want the rest of what I remember...",
+      "This might connect to something else.",
+      "I should probably mention one more piece."
+    ]
+  },
+  "no_memory_dialogues": [
+    {
+      "profiles": [
+        "STRANGER"
+      ],
+      "attitudes": [
+        "friendly"
+      ],
+      "lines": [
+        "Sorry... I do not think we have met.",
+        "You look shaken, and I wish I had something steadier to give you.",
+        "But I would rather tell you nothing than hand you a wrong memory."
+      ]
+    },
+    {
+      "profiles": [
+        "STRANGER"
+      ],
+      "attitudes": [
+        "awkward"
+      ],
+      "lines": [
+        "Do I know you?",
+        "...No. I do not think I do.",
+        "That probably makes me the wrong person to ask."
+      ]
+    },
+    {
+      "profiles": [
+        "STRANGER"
+      ],
+      "attitudes": [
+        "suspicious"
+      ],
+      "lines": [
+        "You are asking strangers to tell you who you are?",
+        "That sounds dangerous.",
+        "Please be careful with whatever people say."
+      ]
+    },
+    {
+      "profiles": [
+        "STRANGER"
+      ],
+      "attitudes": [
+        "tired"
+      ],
+      "lines": [
+        "No. I do not know you.",
+        "I am sorry, but I have nothing useful.",
+        "Ask someone who can look you in the eye and mean it."
+      ]
+    },
+    {
+      "profiles": [
+        "CASUAL_LOCAL",
+        "NEIGHBOR",
+        "COWORKER",
+        "FRIEND_OF_FRIEND"
+      ],
+      "attitudes": [
+        "friendly",
+        "careful",
+        "concerned",
+        "uncertain"
+      ],
+      "lines": [
+        "I have seen you around, Lamb.",
+        "That is the honest version.",
+        "I do not know you well enough to give you a memory I would trust."
+      ]
+    },
+    {
+      "profiles": [
+        "CASUAL_LOCAL",
+        "NEIGHBOR",
+        "COWORKER",
+        "FRIEND_OF_FRIEND"
+      ],
+      "attitudes": [
+        "amused",
+        "nosy",
+        "gossipy",
+        "blunt"
+      ],
+      "lines": [
+        "I could make something up, but that feels like a terrible hobby.",
+        "All I know is your name and the way people lower their voices when they say it lately.",
+        "That is not a memory. It is just noise."
+      ]
+    }
+  ],
+  "memory_dialogues": {
+    "M001": [
+      {
+        "profiles": [
+          "CASUAL_LOCAL",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "friendly",
+          "careful"
+        ],
+        "source": "overheard birthday conversation",
+        "certainty": "medium",
+        "lines": [
+          "Your birthday came up at the cafe once.",
+          "Someone teased you about being twenty-five and still ordering drinks like a student.",
+          "You laughed, so I remember it."
+        ]
+      }
+    ],
+    "M002": [
+      {
+        "profiles": [
+          "CASUAL_LOCAL",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "uncertain",
+          "gossipy"
+        ],
+        "source": "secondhand rumor",
+        "certainty": "low",
+        "lines": [
+          "I thought you were younger.",
+          "Twenty-two, maybe?",
+          "Do not hold that too tightly. I might be borrowing someone else's certainty."
+        ]
+      }
+    ],
+    "M003": [
+      {
+        "profiles": [
+          "NEIGHBOR",
+          "CASUAL_LOCAL"
+        ],
+        "attitudes": [
+          "observant",
+          "concerned"
+        ],
+        "source": "repeated observation",
+        "certainty": "high",
+        "lines": [
+          "You usually come home alone.",
+          "One set of lights, one set of footsteps, one window left open too late.",
+          "If someone lives with you, they are very good at being invisible."
+        ]
+      }
+    ],
+    "M004": [
+      {
+        "profiles": [
+          "NEIGHBOR",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "nosy",
+          "gossipy"
+        ],
+        "source": "misread routine",
+        "certainty": "medium",
+        "lines": [
+          "I always assumed Saeli lived with you.",
+          "She is there enough on weekends that people started treating it like fact.",
+          "Assumptions grow legs around here."
+        ]
+      }
+    ],
+    "M005": [
+      {
+        "profiles": [
+          "NEIGHBOR",
+          "CASUAL_LOCAL"
+        ],
+        "attitudes": [
+          "uncertain",
+          "careful"
+        ],
+        "source": "misinterpreted household clue",
+        "certainty": "low",
+        "lines": [
+          "There was another pair of shoes outside your door for a while.",
+          "I thought maybe you had a roommate.",
+          "But shoes are not exactly a witness statement."
+        ]
+      }
+    ],
+    "M006": [
+      {
+        "profiles": [
+          "NEIGHBOR",
+          "SCHOOLMATE"
+        ],
+        "attitudes": [
+          "uncertain",
+          "nostalgic"
+        ],
+        "source": "old information",
+        "certainty": "low",
+        "lines": [
+          "Naven's name still comes up when people talk about you.",
+          "For a long time I thought you still lived with him.",
+          "Old information has a way of pretending it is current."
+        ]
+      }
+    ],
+    "M007": [
+      {
+        "profiles": [
+          "SCHOOLMATE",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "warm",
+          "careful"
+        ],
+        "source": "personal recollection",
+        "certainty": "high",
+        "lines": [
+          "You used to get letters from home.",
+          "Not Merun City home. Family home.",
+          "You said they were far enough away that visits had to be planned like weather."
+        ]
+      }
+    ],
+    "M008": [
+      {
+        "profiles": [
+          "SCHOOLMATE",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "friendly",
+          "nostalgic"
+        ],
+        "source": "family story",
+        "certainty": "high",
+        "lines": [
+          "Oryn is your little brother, right?",
+          "You complained about him like it was a sport.",
+          "But you kept every tiny drawing he sent you."
+        ]
+      }
+    ],
+    "M009": [
+      {
+        "profiles": [
+          "FRIEND_OF_FRIEND",
+          "SCHOOLMATE"
+        ],
+        "attitudes": [
+          "uncertain",
+          "awkward"
+        ],
+        "source": "mixed-up family rumor",
+        "certainty": "low",
+        "lines": [
+          "I heard Oryn was your older brother.",
+          "Or maybe he just acted older in the story.",
+          "People tidy family stories until they stop being true."
+        ]
+      }
+    ],
+    "M010": [
+      {
+        "profiles": [
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "gossipy",
+          "uncertain"
+        ],
+        "source": "secondhand family rumor",
+        "certainty": "low",
+        "lines": [
+          "Someone told me Oryn was your cousin.",
+          "They said it with that awful confidence people use when they do not know a family.",
+          "So... take that carefully."
+        ]
+      }
+    ],
+    "M011": [
+      {
+        "profiles": [
+          "SCHOOLMATE",
+          "NEIGHBOR"
+        ],
+        "attitudes": [
+          "nostalgic",
+          "friendly"
+        ],
+        "source": "school recollection",
+        "certainty": "high",
+        "lines": [
+          "You arrived in Merun City before Sorel was even part of the conversation.",
+          "High school first. New uniform, too-clean bag, pretending you were not nervous.",
+          "Everyone pretended not to notice. Everyone noticed."
+        ]
+      }
+    ],
+    "M012": [
+      {
+        "profiles": [
+          "UNIVERSITY_PEER",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "overconfident",
+          "gossipy"
+        ],
+        "source": "campus assumption",
+        "certainty": "medium",
+        "lines": [
+          "I thought you came to Merun for university.",
+          "That is how most of us met you, so it became the easy version.",
+          "Easy versions are not always true."
+        ]
+      }
+    ],
+    "M013": [
+      {
+        "profiles": [
+          "COWORKER",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "blunt",
+          "uncertain"
+        ],
+        "source": "workplace assumption",
+        "certainty": "low",
+        "lines": [
+          "I heard you only moved here after university for work.",
+          "It made sense when someone said it.",
+          "A lot of wrong things make sense until someone remembers better."
+        ]
+      }
+    ],
+    "M014": [
+      {
+        "profiles": [
+          "SCHOOLMATE",
+          "NEIGHBOR"
+        ],
+        "attitudes": [
+          "warm",
+          "nostalgic"
+        ],
+        "source": "personal recollection",
+        "certainty": "high",
+        "lines": [
+          "Naven used to wait near the school gate when the rain got bad.",
+          "You acted embarrassed, but you always walked home with him.",
+          "I remember thinking you were lucky and trying not to envy it."
+        ]
+      }
+    ],
+    "M015": [
+      {
+        "profiles": [
+          "SCHOOLMATE",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "uncertain",
+          "awkward"
+        ],
+        "source": "school rumor",
+        "certainty": "low",
+        "lines": [
+          "People said you lived in a student dorm back then.",
+          "I never saw it myself.",
+          "It might have just been the kind of thing classmates say when they do not know where someone goes after class."
+        ]
+      }
+    ],
+    "M016": [
+      {
+        "profiles": [
+          "SCHOOLMATE",
+          "NEIGHBOR"
+        ],
+        "attitudes": [
+          "overconfident",
+          "uncertain"
+        ],
+        "source": "misremembered independence",
+        "certainty": "low",
+        "lines": [
+          "You always seemed so independent that I assumed you already had your own place.",
+          "Even in high school.",
+          "Looking back, that might say more about how you carried yourself than where you slept."
+        ]
+      }
+    ],
+    "M017": [
+      {
+        "profiles": [
+          "SCHOOLMATE",
+          "UNIVERSITY_PEER"
+        ],
+        "attitudes": [
+          "amused",
+          "nostalgic"
+        ],
+        "source": "school reputation",
+        "certainty": "high",
+        "lines": [
+          "You were the person teachers looked at when no one else knew the answer.",
+          "It was irritating.",
+          "Useful, but irritating."
+        ]
+      }
+    ],
+    "M018": [
+      {
+        "profiles": [
+          "UNIVERSITY_PEER",
+          "COWORKER"
+        ],
+        "attitudes": [
+          "friendly",
+          "amused"
+        ],
+        "source": "shared study/work context",
+        "certainty": "high",
+        "lines": [
+          "Design was always your thing.",
+          "At Sorel, you could make a blank room look like it was waiting for someone specific.",
+          "That sounds sentimental, but it was annoying how good you were."
+        ]
+      }
+    ],
+    "M019": [
+      {
+        "profiles": [
+          "UNIVERSITY_PEER",
+          "COWORKER"
+        ],
+        "attitudes": [
+          "overconfident",
+          "blunt"
+        ],
+        "source": "confused profession label",
+        "certainty": "medium",
+        "lines": [
+          "People kept calling you an architecture student.",
+          "You had the rulers, the models, the exhausted stare.",
+          "Maybe they rounded you into the nearest word."
+        ]
+      }
+    ],
+    "M020": [
+      {
+        "profiles": [
+          "UNIVERSITY_PEER",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "uncertain",
+          "gossipy"
+        ],
+        "source": "campus rumor",
+        "certainty": "low",
+        "lines": [
+          "I heard engineering once.",
+          "Maybe because you spent time in that building when the design rooms were full.",
+          "Campus rumors have terrible maps."
+        ]
+      }
+    ],
+    "M021": [
+      {
+        "profiles": [
+          "UNIVERSITY_PEER",
+          "NEIGHBOR"
+        ],
+        "attitudes": [
+          "friendly",
+          "observant"
+        ],
+        "source": "university recollection",
+        "certainty": "high",
+        "lines": [
+          "You got your own place when university started.",
+          "Tiny, from what you said, but yours.",
+          "You talked about choosing curtains like it was a declaration of independence."
+        ]
+      }
+    ],
+    "M022": [
+      {
+        "profiles": [
+          "UNIVERSITY_PEER",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "uncertain",
+          "careful"
+        ],
+        "source": "old fact carried forward",
+        "certainty": "low",
+        "lines": [
+          "I thought you stayed with Naven through university.",
+          "People kept linking you two in stories.",
+          "Maybe they forgot that lives keep moving after the first chapter."
+        ]
+      }
+    ],
+    "M023": [
+      {
+        "profiles": [
+          "UNIVERSITY_PEER"
+        ],
+        "attitudes": [
+          "overconfident",
+          "awkward"
+        ],
+        "source": "campus assumption",
+        "certainty": "low",
+        "lines": [
+          "I placed you in the dorms in my head.",
+          "Most of us were there, and you were always around late.",
+          "That does not mean you slept there."
+        ]
+      }
+    ],
+    "M024": [
+      {
+        "profiles": [
+          "COWORKER",
+          "CASUAL_LOCAL",
+          "UNIVERSITY_PEER"
+        ],
+        "attitudes": [
+          "friendly",
+          "amused"
+        ],
+        "source": "work context",
+        "certainty": "high",
+        "lines": [
+          "Interior designer. That is the part I know.",
+          "You once rearranged a waiting room while you were only there to drop off papers.",
+          "The owner kept it that way."
+        ]
+      }
+    ],
+    "M025": [
+      {
+        "profiles": [
+          "COWORKER",
+          "CASUAL_LOCAL"
+        ],
+        "attitudes": [
+          "blunt",
+          "overconfident"
+        ],
+        "source": "mistaken job label",
+        "certainty": "medium",
+        "lines": [
+          "I called you an architect once.",
+          "You gave me a look like I had moved a wall without asking.",
+          "So maybe that was my mistake, not your job."
+        ]
+      }
+    ],
+    "M026": [
+      {
+        "profiles": [
+          "COWORKER",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "uncertain",
+          "careful"
+        ],
+        "source": "portfolio confusion",
+        "certainty": "low",
+        "lines": [
+          "Someone said graphic designer because they saw your sketches.",
+          "Your work did have pages and color notes everywhere.",
+          "But sketches can point to a lot of things."
+        ]
+      }
+    ],
+    "M027": [
+      {
+        "profiles": [
+          "CASUAL_LOCAL",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "gossipy",
+          "friendly"
+        ],
+        "source": "shop association",
+        "certainty": "low",
+        "lines": [
+          "I used to think you worked at the flower shop.",
+          "You were in there so often that it seemed reasonable.",
+          "Reasonable is not the same as true."
+        ]
+      }
+    ],
+    "M028": [
+      {
+        "profiles": [
+          "UNIVERSITY_PEER",
+          "COWORKER"
+        ],
+        "attitudes": [
+          "friendly",
+          "nostalgic"
+        ],
+        "source": "life-stage recollection",
+        "certainty": "high",
+        "lines": [
+          "You finished Sorel and went straight into work.",
+          "You tried to act casual about it.",
+          "But you kept checking your first client email like it might disappear."
+        ]
+      }
+    ],
+    "M029": [
+      {
+        "profiles": [
+          "CASUAL_LOCAL",
+          "NEIGHBOR",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "friendly",
+          "observant"
+        ],
+        "source": "repeated purchase",
+        "certainty": "high",
+        "lines": [
+          "Roses, usually red ones.",
+          "You pretended you were choosing them for the room, but you smiled before you paid.",
+          "People do not smile at design research like that."
+        ]
+      }
+    ],
+    "M030": [
+      {
+        "profiles": [
+          "CASUAL_LOCAL",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "uncertain",
+          "gossipy"
+        ],
+        "source": "mistaken purchase memory",
+        "certainty": "low",
+        "lines": [
+          "Lilies stick in my head when I think of you.",
+          "Maybe you bought them once.",
+          "Maybe I just remember the smell and attached your face to it."
+        ]
+      }
+    ],
+    "M031": [
+      {
+        "profiles": [
+          "CASUAL_LOCAL"
+        ],
+        "attitudes": [
+          "amused",
+          "uncertain"
+        ],
+        "source": "shop assumption",
+        "certainty": "low",
+        "lines": [
+          "Sunflowers felt like your sort of flower.",
+          "Bright, impossible to ignore, always taking up too much space on the counter.",
+          "That is not evidence. It is just a feeling."
+        ]
+      }
+    ],
+    "M032": [
+      {
+        "profiles": [
+          "CASUAL_LOCAL",
+          "COWORKER",
+          "UNIVERSITY_PEER"
+        ],
+        "attitudes": [
+          "friendly",
+          "amused"
+        ],
+        "source": "habit and style",
+        "certainty": "high",
+        "lines": [
+          "Red kept showing up around you.",
+          "Notebook corners, fabric samples, that awful scarf you insisted was tasteful.",
+          "You liked it too much for it to be an accident."
+        ]
+      }
+    ],
+    "M033": [
+      {
+        "profiles": [
+          "COWORKER",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "uncertain",
+          "overconfident"
+        ],
+        "source": "design palette confusion",
+        "certainty": "low",
+        "lines": [
+          "Blue was always in your layouts, so I assumed it was your favorite.",
+          "You used it carefully, like you trusted it.",
+          "But trusting a color for work is not the same as loving it."
+        ]
+      }
+    ],
+    "M034": [
+      {
+        "profiles": [
+          "CASUAL_LOCAL",
+          "COWORKER",
+          "UNIVERSITY_PEER"
+        ],
+        "attitudes": [
+          "amused",
+          "friendly"
+        ],
+        "source": "shared meal",
+        "certainty": "high",
+        "lines": [
+          "You always asked for extra spice.",
+          "Then acted calm while your eyes watered.",
+          "It was either bravery or poor survival instinct."
+        ]
+      }
+    ],
+    "M035": [
+      {
+        "profiles": [
+          "CASUAL_LOCAL",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "overconfident",
+          "gossipy"
+        ],
+        "source": "misread meal",
+        "certainty": "medium",
+        "lines": [
+          "I saw you push away a spicy dish once.",
+          "After that I thought you hated the stuff.",
+          "One bad lunch can become a whole personality if people are lazy."
+        ]
+      }
+    ],
+    "M036": [
+      {
+        "profiles": [
+          "CASUAL_LOCAL"
+        ],
+        "attitudes": [
+          "careful",
+          "uncertain"
+        ],
+        "source": "single observation",
+        "certainty": "low",
+        "lines": [
+          "You asked whether something was mild.",
+          "I remember that part.",
+          "I do not remember whether you were asking for yourself or for Saeli."
+        ]
+      }
+    ],
+    "M037": [
+      {
+        "profiles": [
+          "CASUAL_LOCAL",
+          "COWORKER",
+          "UNIVERSITY_PEER"
+        ],
+        "attitudes": [
+          "friendly",
+          "amused"
+        ],
+        "source": "repeated meals",
+        "certainty": "high",
+        "lines": [
+          "Dessert never seemed to move you much.",
+          "Everyone else fought over the last sweet roll.",
+          "You looked like you were waiting for the argument to end."
+        ]
+      }
+    ],
+    "M038": [
+      {
+        "profiles": [
+          "CASUAL_LOCAL",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "gossipy",
+          "overconfident"
+        ],
+        "source": "mistaken treat habit",
+        "certainty": "medium",
+        "lines": [
+          "I heard you had a huge sweet tooth.",
+          "Maybe because you kept bringing pastries to people.",
+          "Buying them and wanting them are two different things, though."
+        ]
+      }
+    ],
+    "M039": [
+      {
+        "profiles": [
+          "COWORKER",
+          "CASUAL_LOCAL"
+        ],
+        "attitudes": [
+          "blunt",
+          "uncertain"
+        ],
+        "source": "overheard complaint",
+        "certainty": "low",
+        "lines": [
+          "You once said, 'I hate desserts,' but I think you were trapped at a terrible party.",
+          "That sentence might have been about the room, not the cake.",
+          "Still, it stuck."
+        ]
+      }
+    ],
+    "M040": [
+      {
+        "profiles": [
+          "UNIVERSITY_PEER",
+          "COWORKER",
+          "CASUAL_LOCAL"
+        ],
+        "attitudes": [
+          "friendly",
+          "nostalgic"
+        ],
+        "source": "shared movie night",
+        "certainty": "high",
+        "lines": [
+          "Science-fiction was the only movie shelf you defended like a legal case.",
+          "You said good rooms and good spaceships had the same problem.",
+          "They both had to make impossible places feel lived in."
+        ]
+      }
+    ],
+    "M041": [
+      {
+        "profiles": [
+          "FRIEND_OF_FRIEND",
+          "CASUAL_LOCAL"
+        ],
+        "attitudes": [
+          "gossipy",
+          "uncertain"
+        ],
+        "source": "secondhand media rumor",
+        "certainty": "low",
+        "lines": [
+          "Someone told me romance movies were your favorite.",
+          "Then someone else laughed like that was the worst possible answer.",
+          "So I am not sure which person I should believe either."
+        ]
+      }
+    ],
+    "M042": [
+      {
+        "profiles": [
+          "UNIVERSITY_PEER",
+          "CASUAL_LOCAL"
+        ],
+        "attitudes": [
+          "overconfident",
+          "amused"
+        ],
+        "source": "misread movie choice",
+        "certainty": "medium",
+        "lines": [
+          "You picked horror once and everyone made it your whole taste.",
+          "That happens when a quiet person chooses something loud.",
+          "Maybe it was a favorite. Maybe it was just the only thing no one had seen."
+        ]
+      }
+    ],
+    "M043": [
+      {
+        "profiles": [
+          "UNIVERSITY_PEER",
+          "CASUAL_LOCAL",
+          "COWORKER"
+        ],
+        "attitudes": [
+          "amused",
+          "friendly"
+        ],
+        "source": "direct preference",
+        "certainty": "high",
+        "lines": [
+          "Romance movies made you impatient.",
+          "You always complained that nobody in them knew how to talk like an adult.",
+          "Saeli said that was rich coming from you."
+        ]
+      }
+    ],
+    "M044": [
+      {
+        "profiles": [
+          "COWORKER",
+          "UNIVERSITY_PEER",
+          "CASUAL_LOCAL"
+        ],
+        "attitudes": [
+          "amused",
+          "warm"
+        ],
+        "source": "shared meal memory",
+        "certainty": "high",
+        "lines": [
+          "You once brought soup that tasted like boiled regret.",
+          "You apologized before anyone opened the lid.",
+          "That was probably the safest part of the meal."
+        ]
+      }
+    ],
+    "M045": [
+      {
+        "profiles": [
+          "FRIEND_OF_FRIEND",
+          "CASUAL_LOCAL"
+        ],
+        "attitudes": [
+          "gossipy",
+          "overconfident"
+        ],
+        "source": "misplaced compliment",
+        "certainty": "low",
+        "lines": [
+          "I heard you were an excellent cook.",
+          "But now that I say it, I think Saeli was laughing when she told the story.",
+          "That changes the shape of it."
+        ]
+      }
+    ],
+    "M046": [
+      {
+        "profiles": [
+          "NEIGHBOR",
+          "CASUAL_LOCAL"
+        ],
+        "attitudes": [
+          "observant",
+          "friendly"
+        ],
+        "source": "daily routine",
+        "certainty": "high",
+        "lines": [
+          "You walk everywhere.",
+          "Rain, heat, late evenings, it does not matter.",
+          "If that counts as exercise, then yes, you exercise constantly."
+        ]
+      }
+    ],
+    "M047": [
+      {
+        "profiles": [
+          "CASUAL_LOCAL",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "uncertain",
+          "gossipy"
+        ],
+        "source": "bag mistaken for gym habit",
+        "certainty": "low",
+        "lines": [
+          "I saw you carrying a gym bag a few times.",
+          "Or what looked like one.",
+          "With you it might have been fabric samples and three kinds of tape."
+        ]
+      }
+    ],
+    "M048": [
+      {
+        "profiles": [
+          "NEIGHBOR",
+          "CASUAL_LOCAL"
+        ],
+        "attitudes": [
+          "overconfident",
+          "uncertain"
+        ],
+        "source": "misread rushing",
+        "certainty": "low",
+        "lines": [
+          "You were always half-running down the street.",
+          "I thought maybe you ran for exercise.",
+          "Now I wonder if you were just late a lot."
+        ]
+      }
+    ],
+    "M049": [
+      {
+        "profiles": [
+          "SCHOOLMATE",
+          "UNIVERSITY_PEER",
+          "COWORKER"
+        ],
+        "attitudes": [
+          "amused",
+          "nostalgic"
+        ],
+        "source": "repeated complaint",
+        "certainty": "high",
+        "lines": [
+          "Sports made you vanish.",
+          "If someone suggested a game, you suddenly remembered urgent work in another building.",
+          "It was almost graceful."
+        ]
+      }
+    ],
+    "M050": [
+      {
+        "profiles": [
+          "SCHOOLMATE",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "overconfident",
+          "gossipy"
+        ],
+        "source": "school event confusion",
+        "certainty": "low",
+        "lines": [
+          "I remember you at a school sports day.",
+          "You were smiling, so I assumed you liked playing.",
+          "You might have been laughing at someone else falling over."
+        ]
+      }
+    ],
+    "M051": [
+      {
+        "profiles": [
+          "CASUAL_LOCAL",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "uncertain",
+          "gossipy"
+        ],
+        "source": "crowd association",
+        "certainty": "low",
+        "lines": [
+          "I saw you near the match crowds sometimes.",
+          "That made people call you a sports fan.",
+          "But Merun streets get crowded whether you care about the score or not."
+        ]
+      }
+    ],
+    "M052": [
+      {
+        "profiles": [
+          "COWORKER",
+          "NEIGHBOR",
+          "CASUAL_LOCAL"
+        ],
+        "attitudes": [
+          "amused",
+          "observant"
+        ],
+        "source": "repeated complaint",
+        "certainty": "high",
+        "lines": [
+          "Hot weather made you personally offended.",
+          "You once blamed the sun for a bad floor plan.",
+          "Nobody argued because you looked ready to fight the window."
+        ]
+      }
+    ],
+    "M053": [
+      {
+        "profiles": [
+          "CASUAL_LOCAL",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "overconfident",
+          "uncertain"
+        ],
+        "source": "summer outing assumption",
+        "certainty": "low",
+        "lines": [
+          "I thought you liked hot summer days.",
+          "You were always outside when everyone else hid indoors.",
+          "Maybe you were not enjoying it. Maybe you just had places to be."
+        ]
+      }
+    ],
+    "M054": [
+      {
+        "profiles": [
+          "NEIGHBOR",
+          "CASUAL_LOCAL",
+          "SCHOOLMATE"
+        ],
+        "attitudes": [
+          "friendly",
+          "observant"
+        ],
+        "source": "habit with animals",
+        "certainty": "high",
+        "lines": [
+          "You stopped for cats and dogs like they were neighbors with voting rights.",
+          "Even the mean little ones got a greeting.",
+          "That is hard to fake."
+        ]
+      }
+    ],
+    "M055": [
+      {
+        "profiles": [
+          "NEIGHBOR",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "uncertain",
+          "gossipy"
+        ],
+        "source": "misread animal reaction",
+        "certainty": "low",
+        "lines": [
+          "I thought you liked dogs more than cats.",
+          "There was one cat you avoided for weeks.",
+          "To be fair, that cat avoided being kind."
+        ]
+      }
+    ],
+    "M056": [
+      {
+        "profiles": [
+          "CASUAL_LOCAL",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "overconfident",
+          "uncertain"
+        ],
+        "source": "single bad encounter",
+        "certainty": "low",
+        "lines": [
+          "You once said you did not want animals around.",
+          "But I think there was mud on your shoes and a dog involved.",
+          "People say dramatic things when their socks are wet."
+        ]
+      }
+    ],
+    "M057": [
+      {
+        "profiles": [
+          "SCHOOLMATE",
+          "UNIVERSITY_PEER"
+        ],
+        "attitudes": [
+          "nostalgic",
+          "warm"
+        ],
+        "source": "social recollection",
+        "certainty": "high",
+        "lines": [
+          "You were not loud, but you were never alone for long.",
+          "People drifted toward you after class.",
+          "Saeli was usually first, but not the only one."
+        ]
+      }
+    ],
+    "M058": [
+      {
+        "profiles": [
+          "SCHOOLMATE",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "awkward",
+          "overconfident"
+        ],
+        "source": "surface impression",
+        "certainty": "medium",
+        "lines": [
+          "I thought you kept to yourself.",
+          "You always looked busy, head down, pencil moving.",
+          "Maybe I mistook focus for loneliness."
+        ]
+      }
+    ],
+    "M059": [
+      {
+        "profiles": [
+          "SCHOOLMATE",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "uncertain",
+          "gossipy"
+        ],
+        "source": "outsider assumption",
+        "certainty": "low",
+        "lines": [
+          "From the outside, it looked like you never had a real group.",
+          "Just people passing through.",
+          "But outside views miss the doorways people actually use."
+        ]
+      }
+    ],
+    "M060": [
+      {
+        "profiles": [
+          "SCHOOLMATE",
+          "UNIVERSITY_PEER",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "warm",
+          "nostalgic",
+          "careful"
+        ],
+        "source": "shared history",
+        "certainty": "high",
+        "lines": [
+          "Saeli was the first name people paired with yours.",
+          "Not because you were the same person.",
+          "Because wherever one of you was, the other was usually close enough to interrupt."
+        ]
+      }
+    ],
+    "M061": [
+      {
+        "profiles": [
+          "FRIEND_OF_FRIEND",
+          "SCHOOLMATE"
+        ],
+        "attitudes": [
+          "bitter",
+          "gossipy",
+          "uncertain"
+        ],
+        "source": "biased recollection",
+        "certainty": "low",
+        "lines": [
+          "People exaggerate how close you and Saeli were.",
+          "That is what I heard, anyway.",
+          "Maybe being seen together made everyone invent the feeling."
+        ]
+      }
+    ],
+    "M062": [
+      {
+        "profiles": [
+          "SCHOOLMATE",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "bitter",
+          "gossipy"
+        ],
+        "source": "emotionally biased rumor",
+        "certainty": "low",
+        "lines": [
+          "Near the end, people said you and Saeli could not stand each other.",
+          "I saw the quiet between you once and believed it.",
+          "But quiet can mean anger, hurt, or just not knowing what to say."
+        ]
+      }
+    ],
+    "M063": [
+      {
+        "profiles": [
+          "NEIGHBOR",
+          "CASUAL_LOCAL",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "friendly",
+          "observant",
+          "careful"
+        ],
+        "source": "current observation",
+        "certainty": "high",
+        "lines": [
+          "Saeli is not just someone from before.",
+          "She still comes by, still waits for you, still looks worried when your door stays dark.",
+          "That looks like love from where I stand."
+        ]
+      }
+    ],
+    "M064": [
+      {
+        "profiles": [
+          "FRIEND_OF_FRIEND",
+          "CASUAL_LOCAL"
+        ],
+        "attitudes": [
+          "gossipy",
+          "uncertain"
+        ],
+        "source": "misread closeness",
+        "certainty": "low",
+        "lines": [
+          "I heard you and Saeli were only friends.",
+          "Maybe someone said it before they knew better.",
+          "Or maybe people say 'only' when a thing scares them."
+        ]
+      }
+    ],
+    "M065": [
+      {
+        "profiles": [
+          "FRIEND_OF_FRIEND",
+          "NEIGHBOR"
+        ],
+        "attitudes": [
+          "gossipy",
+          "uncertain"
+        ],
+        "source": "misread argument",
+        "certainty": "low",
+        "lines": [
+          "There was a rumor Saeli was your ex.",
+          "I think it started after someone saw you two arguing outside the flower shop.",
+          "Arguments are easy to mistake for endings."
+        ]
+      }
+    ],
+    "M066": [
+      {
+        "profiles": [
+          "UNIVERSITY_PEER",
+          "FRIEND_OF_FRIEND"
+        ],
+        "attitudes": [
+          "warm",
+          "nostalgic"
+        ],
+        "source": "campus recollection",
+        "certainty": "high",
+        "lines": [
+          "You and Saeli changed during university.",
+          "Not suddenly, no matter what people say.",
+          "It was more like everyone else noticed at the same time."
+        ]
+      }
+    ],
+    "M067": [
+      {
+        "profiles": [
+          "UNIVERSITY_PEER",
+          "FRIEND_OF_FRIEND",
+          "CASUAL_LOCAL"
+        ],
+        "attitudes": [
+          "friendly",
+          "careful"
+        ],
+        "source": "current campus knowledge",
+        "certainty": "high",
+        "lines": [
+          "Saeli is still at Sorel.",
+          "She complains about deadlines with the special despair of someone who has not escaped yet.",
+          "You used to bring her coffee when she forgot meals existed."
+        ]
+      }
+    ],
+    "M068": [
+      {
+        "profiles": [
+          "FRIEND_OF_FRIEND",
+          "CASUAL_LOCAL"
+        ],
+        "attitudes": [
+          "gossipy",
+          "overconfident"
+        ],
+        "source": "outdated assumption",
+        "certainty": "low",
+        "lines": [
+          "I thought Saeli had already graduated.",
+          "She carries herself like someone done with being graded.",
+          "That might be confidence, not a diploma."
+        ]
+      }
+    ],
+    "M069": [
+      {
+        "profiles": [
+          "NEIGHBOR",
+          "CASUAL_LOCAL"
+        ],
+        "attitudes": [
+          "observant",
+          "friendly"
+        ],
+        "source": "weekend routine",
+        "certainty": "high",
+        "lines": [
+          "Weekends are when Saeli usually shows up.",
+          "Same bag, same tired knock, same way of checking the street before you open the door.",
+          "It happened often enough to become part of the rhythm here."
+        ]
+      }
+    ],
+    "M070": [
+      {
+        "profiles": [
+          "FRIEND_OF_FRIEND",
+          "NEIGHBOR"
+        ],
+        "attitudes": [
+          "uncertain",
+          "gossipy"
+        ],
+        "source": "misremembered visit pattern",
+        "certainty": "low",
+        "lines": [
+          "I heard Saeli only came around on holidays.",
+          "Maybe whoever said that only noticed the big visits.",
+          "Some people miss the ordinary days and then call their version complete."
+        ]
+      }
+    ]
+  },
+  "final_dialogue": {
+    "speaker_name": "Lamb",
+    "accuracy_thresholds": {
+      "high": 0.7,
+      "mixed": 0.4
+    },
+    "opening_lines": [
+      "So...",
+      "I guess this is it.",
+      "Funny. I spent all this time trying to find the place I belong, and I am still not completely sure I found the person who belongs there.",
+      "I could not have gotten here without you.",
+      "So before I go, tell me something.",
+      "Do you think we got it right?",
+      "The memories. Me. Do you think we actually figured out who I am?"
+    ],
+    "confidence_choices": [
+      {
+        "id": "CONFIDENT",
+        "text": "Yes. I'm sure."
+      },
+      {
+        "id": "UNSURE",
+        "text": "I think so... but I'm not completely sure."
+      },
+      {
+        "id": "DOUBTFUL",
+        "text": "No. I think we got some of it wrong."
+      }
+    ],
+    "responses": {
+      "HIGH_CONFIDENT": [
+        "Yeah.",
+        "...I think I am too.",
+        "Some of it still feels strange, like reading someone else's diary and recognizing the handwriting.",
+        "But when I put everything together, it feels like me.",
+        "I think we found her."
+      ],
+      "HIGH_UNSURE": [
+        "You are still doubting it?",
+        "...That is almost funny.",
+        "I am the one missing half my life, and somehow I sound more confident than you.",
+        "We made mistakes. I know there are things we will never hold perfectly.",
+        "But this feels right.",
+        "I think we did better than you think."
+      ],
+      "HIGH_DOUBTFUL": [
+        "Really?",
+        "Maybe we did get pieces wrong.",
+        "But I do not feel lost the way I did before.",
+        "Maybe knowing yourself is not about remembering every detail perfectly.",
+        "Maybe getting close is enough.",
+        "And I think you got pretty close."
+      ],
+      "MIXED_CONFIDENT": [
+        "You are?",
+        "I wish I could borrow that certainty.",
+        "Some things fit. Some really do not.",
+        "There are memories in that book that feel like they belong to three different lives.",
+        "Maybe one of them is me.",
+        "Maybe all of them are, in some way.",
+        "I am just not as certain as you are."
+      ],
+      "MIXED_UNSURE": [
+        "Yeah.",
+        "That is exactly how I feel.",
+        "There are pieces that fit perfectly, and others that feel like we forced them into the wrong places.",
+        "Maybe that is all we were ever going to get.",
+        "Not an answer. Just enough pieces to keep going."
+      ],
+      "MIXED_DOUBTFUL": [
+        "We did.",
+        "I can feel that much.",
+        "But I do not think everything was wrong.",
+        "There are things in there I want to keep.",
+        "People I want to meet again. Places I want to see.",
+        "Maybe that is enough for now."
+      ],
+      "LOW_CONFIDENT": [
+        "...You really believe that?",
+        "I do not know.",
+        "I keep looking at everything we decided, and none of it feels like it is looking back at me.",
+        "Maybe you are right.",
+        "Maybe this really is who I was.",
+        "That is what scares me.",
+        "Because I do not recognize her."
+      ],
+      "LOW_UNSURE": [
+        "Neither am I.",
+        "Actually, I think I am less sure now than when we started.",
+        "Before, I knew I did not remember.",
+        "Now I have answers, and I do not know which ones belong to me.",
+        "I wanted this to make things clearer.",
+        "It did not."
+      ],
+      "LOW_DOUBTFUL": [
+        "Yeah.",
+        "Me too.",
+        "I wanted to believe we would reach the end and everything would suddenly make sense.",
+        "I guess that is not how this works.",
+        "Maybe we got lost somewhere along the way.",
+        "At least you are not pretending we did not."
+      ]
+    },
+    "thank_you_lines": [
+      "Still...",
+      "Thank you.",
+      "For staying with me.",
+      "For listening to all of them.",
+      "For trying to figure me out when I could not.",
+      "Maybe we found the old me.",
+      "Maybe we did not.",
+      "But I do not think I am as lost as I was when we started."
+    ],
+    "final_lines": {
+      "HIGH": [
+        "Time to go home."
+      ],
+      "MIXED": [
+        "Whatever is on the other side, I will find out."
+      ],
+      "LOW": [
+        "I think I can do this part myself."
+      ]
+    },
+    "ending_titles": {
+      "HIGH": "Found",
+      "MIXED": "Almost Familiar",
+      "LOW": "Someone Else's Memories"
+    }
+  }
+}

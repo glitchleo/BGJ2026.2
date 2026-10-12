@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://oufxqf5jtob2"]
+
+[ext_resource type="Script" uid="uid://8em165a3i23q" path="res://scripts/settings_menu.gd" id="1_settings_menu"]
+[ext_resource type="Texture2D" uid="uid://dqjyaxi5cchdf" path="res://assets/gameUI/Settings-menu.png" id="2_settings_art"]
+[ext_resource type="PackedScene" uid="uid://b4qhbs2fhhxha" path="res://scenes/volume_slider.tscn" id="3_volume_slider"]
+
+[node name="SettingsMenu" type="Control" unique_id=626739430]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_settings_menu")
+
+[node name="MenuTexture" type="TextureRect" parent="." unique_id=1730778193]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_settings_art")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="FullscreenButton" type="Button" parent="." unique_id=915829019]
+self_modulate = Color(1, 1, 1, 0.004)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.38
+anchor_top = 0.24
+anchor_right = 0.41900003
+anchor_bottom = 0.312
+offset_left = 170.34003
+offset_top = 161.16
+offset_right = 170.20697
+offset_bottom = 161.36801
+focus_mode = 0
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="MasterVolumeSlider" parent="." unique_id=289056705 instance=ExtResource("3_volume_slider")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.45700002
+anchor_top = 0.25100002
+anchor_right = 0.545
+anchor_bottom = 0.31100002
+offset_left = 0.20098877
+offset_top = -6.9160156
+offset_right = 261.185
+offset_bottom = -6.876007
+
+[node name="MusicVolumeSlider" parent="." unique_id=920200224 instance=ExtResource("3_volume_slider")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.46100003
+anchor_top = 0.303
+anchor_right = 0.54800004
+anchor_bottom = 0.36400002
+offset_left = -7.0270386
+offset_top = -10.548004
+offset_right = 269.44385
+offset_bottom = -16.424011
+
+[node name="SfxVolumeSlider" parent="." unique_id=1294985642 instance=ExtResource("3_volume_slider")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.46100003
+anchor_top = 0.33600003
+anchor_right = 0.55
+anchor_bottom = 0.395
+offset_left = -7.0270386
+offset_top = 0.2239685
+offset_right = 252.14996
+offset_bottom = -3.8200073
+
+[node name="BackButton" type="Button" parent="." unique_id=1513223475]
+self_modulate = Color(1, 1, 1, 0.004)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.411
+anchor_top = 0.795
+anchor_right = 0.47800002
+anchor_bottom = 0.86100006
+offset_left = -0.67700195
+offset_top = -0.22003174
+offset_right = -0.68603516
+offset_bottom = -0.15600586
+focus_mode = 0
+mouse_default_cursor_shape = 2
+flat = true

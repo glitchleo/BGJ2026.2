@@ -1,0 +1,76 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/new_memory_card.gd" id="1_new_memory_card"]
+[ext_resource type="Texture2D" path="res://assets/gameUI/newMemory.png" id="2_container"]
+[ext_resource type="Texture2D" path="res://assets/gameUI/BmoveTo-true.png" id="3_true"]
+[ext_resource type="Texture2D" path="res://assets/gameUI/BmoveTo-false.png" id="4_false"]
+[ext_resource type="Texture2D" path="res://assets/gameUI/BmoveTo-uncertain.png" id="5_uncertain"]
+
+[node name="NewMemoryCard" type="Control"]
+custom_minimum_size = Vector2(673, 482)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 673.0
+offset_bottom = 482.0
+mouse_filter = 0
+script = ExtResource("1_new_memory_card")
+
+[node name="Container" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_container")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="MemoryText" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.17
+anchor_top = 0.21
+anchor_right = 0.83
+anchor_bottom = 0.61
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 34
+theme_override_font_sizes/bold_font_size = 34
+text = ""
+bbcode_enabled = true
+fit_content = false
+scroll_active = false
+autowrap_mode = 3
+
+[node name="ButtonRow" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.16
+anchor_top = 0.68
+anchor_right = 0.84
+anchor_bottom = 0.82
+theme_override_constants/separation = 18
+alignment = 1
+
+[node name="TrueButton" type="TextureButton" parent="ButtonRow"]
+custom_minimum_size = Vector2(88, 46)
+layout_mode = 2
+focus_mode = 0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("3_true")
+
+[node name="FalseButton" type="TextureButton" parent="ButtonRow"]
+custom_minimum_size = Vector2(88, 46)
+layout_mode = 2
+focus_mode = 0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("4_false")
+
+[node name="UncertainButton" type="TextureButton" parent="ButtonRow"]
+custom_minimum_size = Vector2(140, 48)
+layout_mode = 2
+focus_mode = 0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("5_uncertain")

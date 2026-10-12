@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://bp74j3a5nq8ye"]
+
+[ext_resource type="Script" uid="uid://cd5i74n8b6m2j" path="res://scripts/lost_meter.gd" id="1_lost_meter"]
+[ext_resource type="Texture2D" uid="uid://dqbn271k3gq0d" path="res://assets/gameUI/lm-container.png" id="2_container"]
+[ext_resource type="Texture2D" uid="uid://d1tx6tv0lke2t" path="res://assets/gameUI/lm-filling.png" id="3_filling"]
+
+[node name="LostMeter" type="Control"]
+custom_minimum_size = Vector2(392, 71)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 392.0
+offset_bottom = 71.0
+mouse_filter = 2
+script = ExtResource("1_lost_meter")
+
+[node name="Container" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 392.0
+offset_bottom = 71.0
+mouse_filter = 2
+texture = ExtResource("2_container")
+expand_mode = 1
+stretch_mode = 0
+
+[node name="FillClip" type="Control" parent="."]
+z_index = 1
+clip_contents = true
+layout_mode = 1
+anchors_preset = 0
+offset_right = 392.0
+offset_bottom = 71.0
+mouse_filter = 2
+
+[node name="Filling" type="TextureRect" parent="FillClip"]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 392.0
+offset_bottom = 71.0
+mouse_filter = 2
+texture = ExtResource("3_filling")
+expand_mode = 1
+stretch_mode = 0

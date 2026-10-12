@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://n75brwig0660"]
+
+[ext_resource type="Script" uid="uid://c8bpurphvmvtt" path="res://scripts/door.gd" id="1_hpvv5"]
+[ext_resource type="Texture2D" uid="uid://cglao2x2jyosh" path="res://assets/gameUI/enter-label.png" id="2_enter_label"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gupo5"]
+size = Vector2(256, 512)
+
+[node name="Door" type="Area2D" unique_id=625696135]
+script = ExtResource("1_hpvv5")
+
+[node name="Label" type="Label" parent="." unique_id=1944316391]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -33.0
+offset_top = -11.5
+offset_right = 33.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Enter [E]"
+horizontal_alignment = 1
+
+[node name="PromptSprite" type="Sprite2D" parent="." unique_id=259173594]
+position = Vector2(0, -123)
+scale = Vector2(0.33088234, 0.36206898)
+texture = ExtResource("2_enter_label")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=563308548]
+shape = SubResource("RectangleShape2D_gupo5")
